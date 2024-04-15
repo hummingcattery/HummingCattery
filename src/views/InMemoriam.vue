@@ -16,7 +16,7 @@
                 <span>Multi BIS, BIV, NOM -winner</span>
             </p>
             <div>
-                <img class="img-fluid" title="SC FI*Zhamanen Harlequin, DVM" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Harppu_01.jpg" alt="Harppu" width="900" height="660">
+                <img class="img-fluid" title="SC FI*Zhamanen Harlequin, DVM" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Harppu_01.jpg" alt="Harppu" width="900" height="660">
             </div>
         </div>
 

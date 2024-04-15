@@ -16,7 +16,7 @@
                 <span>Vuoden kissa 2014</span>
             </p>
             <div col-3>
-                <img class="img-fluid" title="SC FI*Recknagel Tairapänks" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Halka_01.jpg" alt="Halka" width="900" height="600">
+                <img class="img-fluid" title="SC FI*Recknagel Tairapänks" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Halka_01.jpg" alt="Halka" width="900" height="600">
             </div>
         </div>
 
@@ -38,7 +38,7 @@
                     <span>Useampi BIV & NOM pentuluokissa. Hekla ei ole näyttelytasoinen, joten aikuisena ei ole käyty näyttelyissä. :)</span>
                 </p>
                 <div col-3>
-                    <img class="img-fluid" title="Hekla" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Hekla_01.jpeg" alt="Hekla" width="1200" height="1600">
+                    <img class="img-fluid" title="Hekla" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Hekla_01.jpeg" alt="Hekla" width="1200" height="1600">
                 </div>
             </p>
         </div>

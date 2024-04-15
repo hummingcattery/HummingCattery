@@ -36,7 +36,7 @@
           </tbody>
         </table>
 
-        <img class="img-fluid" title="4. pentue" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\pentue_04.jpg" alt="4. pentue" width="1600" height="1200">
+        <img class="img-fluid" title="4. pentue" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/pentue_04.jpg" alt="4. pentue" width="1600" height="1200">
     </div>
 </template>
 
