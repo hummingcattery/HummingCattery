@@ -27,7 +27,7 @@
           </tbody>
         </table>
 
-        <!-- <img class="img-fluid" title="3. pentue" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\pentue_03.jpg" alt="3. pentue" width="1600" height="1064"> -->
+        <img class="img-fluid" title="3. pentue" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\pentue_03.jpg" alt="3. pentue" width="1600" height="1064">
     </div>
 </template>
 

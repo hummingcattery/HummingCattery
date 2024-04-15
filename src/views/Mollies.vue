@@ -10,7 +10,7 @@
             <p>Näyttelymenestys (nuorten luokka): 3xBIV, 5xNOM, 1xBIS</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=296517" target="_blank">Sukutaulu</a>
             <div>
-                <!-- <img class="img-fluid" title="Demi Johnnatarie -E" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Hillevi_01.jpg" alt="Hillevi" width="1300" height="953"> -->
+                <img class="img-fluid" title="Demi Johnnatarie -E" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Hillevi_01.jpg" alt="Hillevi" width="1300" height="953">
             </div>
         </div>
 
@@ -25,7 +25,7 @@
             <p>Näyttelymenestys (pennut): Kitten Champion, 2xNOM</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=323820" target="_blank">Sukutaulu</a>
             <div>
-                <!-- <img class="img-fluid" title="Unica vom Lilienweg" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Hulda_01.jpg" alt="Hulda" width="700" height="1000"> -->
+                <img class="img-fluid" title="Unica vom Lilienweg" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Hulda_01.jpg" alt="Hulda" width="700" height="1000">
             </div>
         </div>
 

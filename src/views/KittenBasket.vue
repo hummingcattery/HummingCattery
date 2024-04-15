@@ -42,8 +42,8 @@
         </table>
         
         <div class="row">
-            <!-- <img class="column" title="Valma" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Valma_01.jpg" alt="Valma">
-            <img class="column" title="Vilma" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Vilma_01.jpg" alt="Vilma"> -->
+            <img class="column" title="Valma" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Valma_01.jpg" alt="Valma">
+            <img class="column" title="Vilma" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Vilma_01.jpg" alt="Vilma">
         </div>
     </div>
 

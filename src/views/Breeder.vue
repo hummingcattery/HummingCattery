@@ -25,7 +25,7 @@
             Näyttelykärpänen puraisi itseäni jo lapsena, ja kissoillani onkin ollut loistavaa menestystä aikanaan näyttelyrintamalla ("Halka" SC SP FI*Recknagel Tairapänks, DVM DSM oli mm. Kissaliiton vuoden kissa vuonna 2014).
             Näiden kissojen (Harppu & Halka) jäätyä eläkkeelle oli näyttelyistä useamman vuoden tauko, mutta vuonna 2022 pääsimme taas aloittamaan näyttelyttämisen, kun Hillevi muutti meille.
         </p>
-        <!-- <img src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Breeder.jpg" alt="Jenni"> -->
+        <img src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Breeder.jpg" alt="Jenni">
     </div>
 
     <hr>

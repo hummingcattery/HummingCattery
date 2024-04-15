@@ -7,8 +7,7 @@
             Meillä on pentuja, etsinnässä kaksi eri sijoituskotia PK-seudulta tai sopimuksen mukaan myös esim. Pirkanmaalta. Mahdollista myös sijoittaa molemmat tytöt samaan kotiin.<br>
             Lue sijoitusehdoista Kissalan Pentu-infosta.
         </p>
-        <!-- TODO: Kommentoitu ulos väliaikaisesti -->
-        <!-- <img class="img-fluid" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Etusivu.jpg" width="700" height="1000"> -->
+        <img class="img-fluid" src="C:\Users\Tomi\Coding\FullStack\humming\humming-cattery\src\assets\images\Etusivu.jpg" width="700" height="1000">
     </div>
 </template>
 
