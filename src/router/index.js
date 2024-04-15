@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory  } from 'vue-router'
-import Home from "@/views/Home.vue";
-import Mollies from "@/views/Mollies.vue"
-import Castrates from "@/views/Castrates.vue"
-import InMemoriam from "@/views/InMemoriam.vue"
-import News from "@/views/News.vue"
-import KittenBasket from "@/views/KittenBasket.vue"
-import KittenInfo from "@/views/KittenInfo.vue"
-import Breeder from "@/views/Breeder.vue"
-import Contact from "@/views/Contact.vue"
-import Pentue1 from "@/views/Pentue1.vue"
-import Pentue2 from "@/views/Pentue2.vue"
-import Pentue3 from "@/views/Pentue3.vue"
-import Pentue4 from "@/views/Pentue4.vue"
-import Pentue5 from "@/views/Pentue5.vue"
+import Home from "../views/Home.vue";
+import Mollies from "../views/Mollies.vue"
+import Castrates from "../views/Castrates.vue"
+import InMemoriam from "../views/InMemoriam.vue"
+import News from "../views/News.vue"
+import KittenBasket from "../views/KittenBasket.vue"
+import KittenInfo from "../views/KittenInfo.vue"
+import Breeder from "../views/Breeder.vue"
+import Contact from "../views/Contact.vue"
+import Pentue1 from "../views/Pentue1.vue"
+import Pentue2 from "../views/Pentue2.vue"
+import Pentue3 from "../views/Pentue3.vue"
+import Pentue4 from "../views/Pentue4.vue"
+import Pentue5 from "../views/Pentue5.vue"
 
 const routes = [
   {
