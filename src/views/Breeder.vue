@@ -1,3 +1,13 @@
+<script>
+    export default {
+        data() {
+            return {
+                breederImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Breeder.jpg?sp=r&st=2024-04-16T18:27:22Z&se=2024-04-17T02:27:22Z&spr=https&sv=2022-11-02&sr=b&sig=DemXPEON6xpdmSjY37jQawVrhDck5y65vHrgwYvBgf8%3D"
+            };
+        }
+    }
+</script>
+
 <template>
     <div>
         <h1>Kasvattaja</h1>
@@ -25,10 +35,8 @@
             Näyttelykärpänen puraisi itseäni jo lapsena, ja kissoillani onkin ollut loistavaa menestystä aikanaan näyttelyrintamalla ("Halka" SC SP FI*Recknagel Tairapänks, DVM DSM oli mm. Kissaliiton vuoden kissa vuonna 2014).
             Näiden kissojen (Harppu & Halka) jäätyä eläkkeelle oli näyttelyistä useamman vuoden tauko, mutta vuonna 2022 pääsimme taas aloittamaan näyttelyttämisen, kun Hillevi muutti meille.
         </p>
-        <img src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Breeder.jpg" alt="Jenni">
+        <img :src="breederImgUrl" alt="Jenni">
     </div>
-
-    <hr>
     
 </template>
 
