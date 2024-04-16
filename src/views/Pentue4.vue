@@ -23,6 +23,14 @@
         <table class="table table-bordered custom-table">
           <tbody>
             <tr>
+              <th>Nimi</th>
+              <th>Väri</th>
+              <th>Sukupuoli</th>
+              <th>Taso</th>
+              <th>Näyttelymenestys</th>
+            </tr>
+
+            <tr>
               <td>Humming Karma Police</td>
               <td>SBI a</td>
               <td>uros</td>

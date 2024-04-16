@@ -22,20 +22,28 @@
     <div class="content-container">
     <table class="table table-bordered custom-table">
         <tbody>
-        <tr>
-            <td>Humming Ummagumma</td>
-            <td>SBI b</td>
-            <td>uros</td>
-            <td>Näyttelytasoinen</td>
-            <td>Nominated for BIS</td>
-        </tr>
-        <tr>
-            <td>Humming High Hopes</td>
-            <td>SBI c</td>
-            <td>naaras</td>
-            <td>Siitostasoinen</td>
-            <td>BIS-winner</td>
-        </tr>
+            <tr>
+                <th>Nimi</th>
+                <th>Väri</th>
+                <th>Sukupuoli</th>
+                <th>Taso</th>
+                <th>Näyttelymenestys</th>
+            </tr>
+
+            <tr>
+                <td>Humming Ummagumma</td>
+                <td>SBI b</td>
+                <td>uros</td>
+                <td>Näyttelytasoinen</td>
+                <td>Nominated for BIS</td>
+            </tr>
+            <tr>
+                <td>Humming High Hopes</td>
+                <td>SBI c</td>
+                <td>naaras</td>
+                <td>Siitostasoinen</td>
+                <td>BIS-winner</td>
+            </tr>
         </tbody>
     </table>
 

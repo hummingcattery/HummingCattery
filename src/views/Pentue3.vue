@@ -23,6 +23,14 @@
         <table class="table table-bordered custom-table">
           <tbody>
             <tr>
+              <th>Nimi</th>
+              <th>Väri</th>
+              <th>Sukupuoli</th>
+              <th>Taso</th>
+              <th>Näyttelymenestys</th>
+            </tr>
+
+            <tr>
               <td>Humming Hoppipolla</td>
               <td>SBI b 21</td>
               <td>uros</td>
