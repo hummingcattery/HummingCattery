@@ -15,7 +15,7 @@
     <div class="content-container">
         <p>
             Meillä on pentuja, etsinnässä kaksi eri sijoituskotia PK-seudulta tai sopimuksen mukaan myös esim. Pirkanmaalta. Mahdollista myös sijoittaa molemmat tytöt samaan kotiin.<br>
-            Lue sijoitusehdoista Kissalan Pentu-infosta.
+            Lue sijoitusehdoista <span><router-link class="nav-link" to="/KittenInfo">täältä</router-link></span>.
         </p>
         <img class="img-fluid" :src="etusivuImgUrl" width="700" height="1000">
     </div>
@@ -33,5 +33,20 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    span {
+        text-decoration: underline;
+    }
+
+    span > router-link {
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: var(--bs-nav-link-color);
+        text-decoration: none;
+        background: none;
+        border: 0;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     }
 </style>
