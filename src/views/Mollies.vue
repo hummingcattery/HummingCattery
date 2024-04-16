@@ -1,3 +1,14 @@
+<script>
+    export default {
+        data() {
+            return {
+                hilleviImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Hillevi_01.jpg?sp=r&st=2024-04-16T18:40:57Z&se=2024-04-17T02:40:57Z&spr=https&sv=2022-11-02&sr=b&sig=wYJXOHcrYLAs8CfQBQiWUOS7ibS%2FgfD3tvl23z8mAoA%3D",
+                huldaImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Hulda_01.jpg?sp=r&st=2024-04-16T18:41:13Z&se=2024-04-17T02:41:13Z&spr=https&sv=2022-11-02&sr=b&sig=4N0G2%2Bi3KNNClmH%2B2G71JqXeva5la4UQ%2FwutW%2BfqK1g%3D"
+            };
+        }
+    }
+</script>
+
 <template>
     <div>
         <div class="content-container">
@@ -10,7 +21,7 @@
             <p>Näyttelymenestys (nuorten luokka): 3xBIV, 5xNOM, 1xBIS</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=296517" target="_blank">Sukutaulu</a>
             <div>
-                <img class="img-fluid" title="Demi Johnnatarie -E" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Hillevi_01.jpg" alt="Hillevi" width="1300" height="953">
+                <img class="img-fluid" title="Demi Johnnatarie -E" :src="hilleviImgUrl" alt="Hillevi" width="1300" height="953">
             </div>
         </div>
 
@@ -25,7 +36,7 @@
             <p>Näyttelymenestys (pennut): Kitten Champion, 2xNOM</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=323820" target="_blank">Sukutaulu</a>
             <div>
-                <img class="img-fluid" title="Unica vom Lilienweg" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Hulda_01.jpg" alt="Hulda" width="700" height="1000">
+                <img class="img-fluid" title="Unica vom Lilienweg" :src="huldaImgUrl" alt="Hulda" width="700" height="1000">
             </div>
         </div>
 
