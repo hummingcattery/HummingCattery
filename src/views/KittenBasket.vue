@@ -1,3 +1,14 @@
+<script>
+    export default {
+        data() {
+            return {
+                valmaImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Valma_01.jpg?sp=r&st=2024-04-16T18:38:00Z&se=2024-04-17T02:38:00Z&spr=https&sv=2022-11-02&sr=b&sig=wEu%2BKGihj0GS4aIAJsCqzafiwxIaDclUw1pQ2v9%2F7Ew%3D",
+                vilmaImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Vilma_01.jpg?sp=r&st=2024-04-16T18:38:29Z&se=2024-04-17T02:38:29Z&spr=https&sv=2022-11-02&sr=b&sig=vyxREJJvtvnoPXnLu%2BlKMt6KSpz0FcjaZ41PWx4HojU%3D"
+            };
+        }
+    }
+</script>
+
 <template>
     <div>
         <h1>Pentukori</h1>
@@ -42,8 +53,8 @@
         </table>
         
         <div class="row">
-            <img class="column" title="Valma" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Valma_01.jpg" alt="Valma">
-            <img class="column" title="Vilma" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Vilma_01.jpg" alt="Vilma">
+            <img class="column" title="Valma" :src="valmaImgUrl" alt="Valma">
+            <img class="column" title="Vilma" :src="vilmaImgUrl" alt="Vilma">
         </div>
     </div>
 

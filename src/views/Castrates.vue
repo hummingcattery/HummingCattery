@@ -1,12 +1,12 @@
 <script>
-export default {
-    data() {
-        return {
-            halkaImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Halka_01.jpg?sp=r&st=2024-04-16T18:31:28Z&se=2024-04-17T02:31:28Z&spr=https&sv=2022-11-02&sr=b&sig=gSgHovBqlwL%2F6vNTxqKhciCF4%2BuZrQF4tt%2FHu1w%2FtKM%3D",
-            heklaImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Hekla_01.jpeg?sp=r&st=2024-04-16T18:31:42Z&se=2024-04-17T02:31:42Z&spr=https&sv=2022-11-02&sr=b&sig=PnyCR%2F159Z6C%2FQxsSk9CQ14EMxASX0xZUQpcv1zebt0%3D"
-        };
+    export default {
+        data() {
+            return {
+                halkaImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Halka_01.jpg?sp=r&st=2024-04-16T18:31:28Z&se=2024-04-17T02:31:28Z&spr=https&sv=2022-11-02&sr=b&sig=gSgHovBqlwL%2F6vNTxqKhciCF4%2BuZrQF4tt%2FHu1w%2FtKM%3D",
+                heklaImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Hekla_01.jpeg?sp=r&st=2024-04-16T18:31:42Z&se=2024-04-17T02:31:42Z&spr=https&sv=2022-11-02&sr=b&sig=PnyCR%2F159Z6C%2FQxsSk9CQ14EMxASX0xZUQpcv1zebt0%3D"
+            };
+        }
     }
-}
 </script>
 
 <template>
