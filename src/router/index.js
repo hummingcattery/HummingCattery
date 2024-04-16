@@ -16,6 +16,10 @@ import Pentue5 from "../views/Pentue5.vue"
 
 const routes = [
   {
+    path: "/",
+    redirect: "/Humming",
+  },
+  {
     path: "/Humming",
     name: "Home",
     component: Home,
