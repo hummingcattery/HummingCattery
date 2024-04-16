@@ -40,7 +40,7 @@
         text-decoration: underline;
     }
 
-    span > router-link {
+    span > a {
         display: contents;
         padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
         font-size: var(--bs-nav-link-font-size);
