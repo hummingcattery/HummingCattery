@@ -19,8 +19,10 @@
         </p>
 
         <p>
-            Jokaisen FI*Humming -pentueen vanhemmat on terveystestattu, lisäksi sydänultrat otetaan kaikista kasvatuskissoista yleensä ennen ensimmäistä astutusta. jokainen
-            FI*Humming -pentu saa matkaansa penturepun, johon kuuluu pennulle tuttua ruokaa, leluja,  huopia, yms.
+            Jokaisen FI*Humming -pentueen vanhemmat on terveystestattu, lisäksi sydänultrat otetaan kaikista kasvatuskissoista yleensä ennen ensimmäistä astutusta. Jokainen
+            FI*Humming -pentu saa matkaansa penturepun, johon kuuluu pennulle tuttua ruokaa, leluja,  huopia, yms. Pennut rekisteröidään Suomen Kissaliittoon (FiFe). 
+            Halutessaan ostaja liitetään kasvattajan toimesta Ery-Syd rotukissayhdistyksen, sekä Pyhä Birman Kissa ry:n jäseneksi vuoden ajaksi. Pennut luovutetaan kahdesti
+            rokotettuina ja terveystarkastettuina aikaisintaan 14 viikon iässä. 
         </p>
 
         <p>

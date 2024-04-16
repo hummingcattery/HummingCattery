@@ -14,7 +14,8 @@
     </div>
     <div class="content-container">
         <p>
-            Meillä on pentuja, etsinnässä kaksi eri sijoituskotia PK-seudulta tai sopimuksen mukaan myös esim. Pirkanmaalta. Mahdollista myös sijoittaa molemmat tytöt samaan kotiin.<br>
+            Meillä on pentuja! Etsinnässä kaksi eri sijoituskotia PK-seudulta tai sopimuksen mukaan myös esim. Pirkanmaalta. Mahdollista myös sijoittaa molemmat tytöt samaan kotiin.
+            <br>
             Lue sijoitusehdoista <span><router-link class="nav-link" to="/KittenInfo">täältä</router-link></span>.
         </p>
         <img class="img-fluid" :src="etusivuImgUrl" width="700" height="1000">
@@ -40,6 +41,7 @@
     }
 
     span > router-link {
+        display: contents;
         padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
         font-size: var(--bs-nav-link-font-size);
         font-weight: var(--bs-nav-link-font-weight);
