@@ -20,32 +20,38 @@
     
     <h3>Pennut</h3>
     <div class="content-container">
-        <table class="table table-bordered custom-table">
-          <tbody>
-            <tr>
-              <th>Nimi</th>
-              <th>Väri</th>
-              <th>Sukupuoli</th>
-              <th>Taso</th>
-              <th>Näyttelymenestys</th>
-            </tr>
+      <div class="container">
+        <div class="row">
+            <div class="col">
+              <table class="table table-bordered custom-table">
+                <tbody>
+                  <tr>
+                    <th>Nimi</th>
+                    <th>Väri</th>
+                    <th>Sukupuoli</th>
+                    <th>Taso</th>
+                    <th>Näyttelymenestys</th>
+                  </tr>
 
-            <tr>
-              <td>Humming Hoppipolla</td>
-              <td>SBI b 21</td>
-              <td>uros</td>
-              <td>Lemmikki</td>
-            </tr>
-            <tr>
-              <td>Humming Staralfur</td>
-              <td>SBI b 21</td>
-              <td>uros</td>
-              <td>Lemmikki</td>
-            </tr>
-          </tbody>
-        </table>
+                  <tr>
+                    <td>Humming Hoppipolla</td>
+                    <td>SBI b 21</td>
+                    <td>uros</td>
+                    <td>Lemmikki</td>
+                  </tr>
+                  <tr>
+                    <td>Humming Staralfur</td>
+                    <td>SBI b 21</td>
+                    <td>uros</td>
+                    <td>Lemmikki</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
 
-        <img class="img-fluid" title="3. pentue" :src="pentue3ImgUrl" alt="3. pentue" width="1600" height="1064">
+      <img class="img-fluid" title="3. pentue" :src="pentue3ImgUrl" alt="3. pentue" width="1600" height="1064">
     </div>
 </template>
 

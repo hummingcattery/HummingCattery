@@ -1,4 +1,5 @@
 <script>
+    import 'bootstrap/dist/css/bootstrap.min.css';
     export default {
         data() {
             return {
@@ -20,32 +21,38 @@
     
     <h3>Pennut</h3>
     <div class="content-container">
-    <table class="table table-bordered custom-table">
-        <tbody>
-            <tr>
-                <th>Nimi</th>
-                <th>Väri</th>
-                <th>Sukupuoli</th>
-                <th>Taso</th>
-                <th>Näyttelymenestys</th>
-            </tr>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered custom-table">
+                        <tbody>
+                            <tr>
+                                <th>Nimi</th>
+                                <th>Väri</th>
+                                <th>Sukupuoli</th>
+                                <th>Taso</th>
+                                <th>Näyttelymenestys</th>
+                            </tr>
 
-            <tr>
-                <td>Humming Ummagumma</td>
-                <td>SBI b</td>
-                <td>uros</td>
-                <td>Näyttelytasoinen</td>
-                <td>Nominated for BIS</td>
-            </tr>
-            <tr>
-                <td>Humming High Hopes</td>
-                <td>SBI c</td>
-                <td>naaras</td>
-                <td>Siitostasoinen</td>
-                <td>BIS-winner</td>
-            </tr>
-        </tbody>
-    </table>
+                            <tr>
+                                <td>Humming Ummagumma</td>
+                                <td>SBI b</td>
+                                <td>uros</td>
+                                <td>Näyttelytasoinen</td>
+                                <td>Nominated for BIS</td>
+                            </tr>
+                            <tr>
+                                <td>Humming High Hopes</td>
+                                <td>SBI c</td>
+                                <td>naaras</td>
+                                <td>Siitostasoinen</td>
+                                <td>BIS-winner</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
         <img class="img-fluid" title="1. pentue" :src="pentue1ImgUrl" alt="1. pentue" width="903" height="570">
     </div>
@@ -67,5 +74,9 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .col {
+        overflow-x: auto;
     }
 </style>

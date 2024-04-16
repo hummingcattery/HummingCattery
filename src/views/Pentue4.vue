@@ -20,39 +20,45 @@
     
     <h3>Pennut</h3>
     <div class="content-container">
-        <table class="table table-bordered custom-table">
-          <tbody>
-            <tr>
-              <th>Nimi</th>
-              <th>Väri</th>
-              <th>Sukupuoli</th>
-              <th>Taso</th>
-              <th>Näyttelymenestys</th>
-            </tr>
+      <div class="container">
+        <div class="row">
+            <div class="col">
+              <table class="table table-bordered custom-table">
+                <tbody>
+                  <tr>
+                    <th>Nimi</th>
+                    <th>Väri</th>
+                    <th>Sukupuoli</th>
+                    <th>Taso</th>
+                    <th>Näyttelymenestys</th>
+                  </tr>
 
-            <tr>
-              <td>Humming Karma Police</td>
-              <td>SBI a</td>
-              <td>uros</td>
-              <td>Lemmikki</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Humming No Surprises</td>
-              <td>SBI n</td>
-              <td>uros</td>
-              <td>Lemmikki</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Humming Paranoid Android</td>
-              <td>SBI f</td>
-              <td>naaras</td>
-              <td>Näyttely/siitos</td>
-              <td>Nominated for BIS</td>
-            </tr>
-          </tbody>
-        </table>
+                  <tr>
+                    <td>Humming Karma Police</td>
+                    <td>SBI a</td>
+                    <td>uros</td>
+                    <td>Lemmikki</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Humming No Surprises</td>
+                    <td>SBI n</td>
+                    <td>uros</td>
+                    <td>Lemmikki</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Humming Paranoid Android</td>
+                    <td>SBI f</td>
+                    <td>naaras</td>
+                    <td>Näyttely/siitos</td>
+                    <td>Nominated for BIS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
 
         <img class="img-fluid" title="4. pentue" :src="pentue4ImgUrl" alt="4. pentue" width="1600" height="1200">
     </div>
