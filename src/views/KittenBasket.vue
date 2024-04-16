@@ -57,9 +57,6 @@
             <img class="column" title="Vilma" :src="vilmaImgUrl" alt="Vilma">
         </div>
     </div>
-
-    <hr>
-    
 </template>
 
 <style lang="scss" scoped>

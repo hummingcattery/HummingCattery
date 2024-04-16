@@ -25,9 +25,6 @@
             </p>
         </div>
     </div>
-
-    <hr>
-    
 </template>
 
 <style lang="scss" scoped>

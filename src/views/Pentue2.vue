@@ -1,3 +1,13 @@
+<script>
+    export default {
+        data() {
+            return {
+                pentue2ImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/pentue_02.jpg?sp=r&st=2024-04-16T18:46:00Z&se=2024-04-17T02:46:00Z&spr=https&sv=2022-11-02&sr=b&sig=aeB3YWeYaeTDPbUHvM8It8vFYzXfDlPtgBiDfjxlc60%3D"
+            };
+        }
+    }
+</script>
+
 <template>
     <div>
       <h1>2. pentue</h1>
@@ -43,7 +53,7 @@
           </tbody>
         </table>
       
-        <img class="img-fluid" title="2. pentue" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/pentue_02.jpg" alt="2. pentue" width="943" height="558">
+        <img class="img-fluid" title="2. pentue" :src="pentue2ImgUrl" alt="2. pentue" width="943" height="558">
     </div>
 </template>
 

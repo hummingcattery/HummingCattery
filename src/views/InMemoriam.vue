@@ -29,9 +29,6 @@
                 <img class="img-fluid" title="SC FI*Zhamanen Harlequin, DVM" :src="harppuImgUrl" alt="Harppu" width="900" height="660">
             </div>
         </div>
-
-        <hr>
-
   </div>
 </template>
 

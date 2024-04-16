@@ -55,9 +55,6 @@
             jonka jälkeen sijoituskissa siirtyy sijoituskodin omistukseen. Pennut pyritään saamaan ennen sijoituskissan 2. ikävuotta, jotta vältytään mahdollisilta komplikaatioilta.
         </p>
     </div>
-
-    <hr>
-    
 </template>
 
 <style lang="scss" scoped>

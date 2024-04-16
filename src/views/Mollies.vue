@@ -39,9 +39,6 @@
                 <img class="img-fluid" title="Unica vom Lilienweg" :src="huldaImgUrl" alt="Hulda" width="700" height="1000">
             </div>
         </div>
-
-        <hr>
-        
   </div>
 </template>
 
