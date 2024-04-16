@@ -1,3 +1,13 @@
+<script>
+    export default {
+        data() {
+            return {
+                harppuImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Harppu_01.jpg?sp=r&st=2024-04-16T18:35:30Z&se=2024-04-17T02:35:30Z&spr=https&sv=2022-11-02&sr=b&sig=E74Cw4eINuJR3KccDOHcJDhHv4AmPC%2BQ85rEqZX5f2o%3D"
+            };
+        }
+    }
+</script>
+
 <template>
     <div>
         <div class="content-container">
@@ -16,7 +26,7 @@
                 <span>Multi BIS, BIV, NOM -winner</span>
             </p>
             <div>
-                <img class="img-fluid" title="SC FI*Zhamanen Harlequin, DVM" src="https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Harppu_01.jpg" alt="Harppu" width="900" height="660">
+                <img class="img-fluid" title="SC FI*Zhamanen Harlequin, DVM" :src="harppuImgUrl" alt="Harppu" width="900" height="660">
             </div>
         </div>
 
