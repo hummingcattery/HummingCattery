@@ -24,33 +24,39 @@
     </div>
 
     <div class="content-container">
-        <table class="table table-bordered custom-table">
-            <tbody>
-                <tr>
-                    <th>Nimi</th>
-                    <th>Sukupuoli</th>
-                    <th>Väri</th>
-                    <th>Taso</th>
-                    <th>Tila</th>
-                </tr>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered custom-table">
+                        <tbody>
+                            <tr>
+                                <th>Nimi</th>
+                                <th>Sukupuoli</th>
+                                <th>Väri</th>
+                                <th>Taso</th>
+                                <th>Tila</th>
+                            </tr>
 
-                <tr>
-                    <td>FI*Humming California Dreamin'</td>
-                    <td>naaras</td>
-                    <td>SBI n</td>
-                    <td>siitostasoinen, sijoitukseen</td>
-                    <td>Vapaa</td>
-                </tr>
+                            <tr>
+                                <td>FI*Humming California Dreamin'</td>
+                                <td>naaras</td>
+                                <td>SBI n</td>
+                                <td>siitostasoinen, sijoitukseen</td>
+                                <td>Vapaa</td>
+                            </tr>
 
-                <tr>
-                    <td class="custom-table-data">Fi*Humming California Girls</td>
-                    <td>naaras</td>
-                    <td>SBI n</td>
-                    <td>näyttelytasoinen, sijoitukseen</td>
-                    <td>Vapaa</td>
-                </tr>
-            </tbody>
-        </table>
+                            <tr>
+                                <td class="custom-table-data">Fi*Humming California Girls</td>
+                                <td>naaras</td>
+                                <td>SBI n</td>
+                                <td>näyttelytasoinen, sijoitukseen</td>
+                                <td>Vapaa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         
         <div class="row">
             <img class="column" title="Valma" :src="valmaImgUrl" alt="Valma">
@@ -85,5 +91,9 @@
 
     img {
         object-fit: contain;
+    }
+
+    .col {
+        overflow-x: auto;
     }
 </style>
