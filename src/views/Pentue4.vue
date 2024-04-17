@@ -81,4 +81,8 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .col {
+        overflow-x: auto;
+    }
 </style>
