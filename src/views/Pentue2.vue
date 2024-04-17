@@ -2,7 +2,7 @@
     export default {
         data() {
             return {
-                pentue2ImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/pentue_02.jpg?sp=r&st=2024-04-16T18:46:00Z&se=2024-04-17T02:46:00Z&spr=https&sv=2022-11-02&sr=b&sig=aeB3YWeYaeTDPbUHvM8It8vFYzXfDlPtgBiDfjxlc60%3D"
+                pentue2ImgUrl: import.meta.env.VITE_PENTUE2IMGURL
             };
         }
     }

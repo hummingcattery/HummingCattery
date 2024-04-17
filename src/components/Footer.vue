@@ -2,8 +2,8 @@
     export default {
         data() {
             return {
-                facebookImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Facebook_icon.svg?sp=r&st=2024-04-16T18:18:43Z&se=2024-04-17T02:18:43Z&spr=https&sv=2022-11-02&sr=b&sig=MgnbiA70mMjIxXYYqtZpxHbfWvUgSJMzBzXzdZRzpnQ%3D",
-                instagramImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Instagram_icon.svg?sp=r&st=2024-04-16T18:19:53Z&se=2024-04-17T02:19:53Z&spr=https&sv=2022-11-02&sr=b&sig=aIQsC%2FoNHv5EoweSMidGHxO1KA81KvuCAho7J9A28ss%3D"
+                facebookImgUrl: import.meta.env.VITE_FACEBOOKIMGURL,
+                instagramImgUrl: import.meta.env.VITE_INSTAGRAMIMGURL
             };
         }
     };

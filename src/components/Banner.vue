@@ -2,7 +2,7 @@
     export default {
         data() {
             return {
-                bannerImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Banner.jpg?sp=r&st=2024-04-16T20:16:02Z&se=2024-04-17T04:16:02Z&spr=https&sv=2022-11-02&sr=b&sig=PC2%2BM119tkvLy0DCnJJIs1f8o3HAvG9MGVSdnIaj2%2BM%3D"
+                bannerImgUrl: import.meta.env.VITE_BANNERIMGURL
             };
         }
     };

@@ -2,7 +2,7 @@
     export default {
         data() {
             return {
-                breederImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Breeder.jpg?sp=r&st=2024-04-16T18:27:22Z&se=2024-04-17T02:27:22Z&spr=https&sv=2022-11-02&sr=b&sig=DemXPEON6xpdmSjY37jQawVrhDck5y65vHrgwYvBgf8%3D"
+                breederImgUrl: import.meta.env.VITE_BREEDERIMGURL
             };
         }
     }

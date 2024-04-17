@@ -2,7 +2,7 @@
     export default {
         data() {
             return {
-                etusivuImgUrl: "https://hummingcatterystorage.blob.core.windows.net/hummingcattery/Etusivu.jpg?sp=r&st=2024-04-16T18:16:59Z&se=2024-04-17T02:16:59Z&spr=https&sv=2022-11-02&sr=b&sig=1THqLJ9%2F71CD3wjNya5qpdNdf9xoJ6XQUdkVYumRIco%3D"
+                etusivuImgUrl: import.meta.env.VITE_ETUSIVUIMGURL
             };
         }
     };
