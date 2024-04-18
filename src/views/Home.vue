@@ -1,4 +1,13 @@
 <script>
+    import EtusivuImage from '../assets/images/Etusivu.jpg'
+    
+    export default {
+        data() {
+            return {
+                etusivuImage: EtusivuImage
+            };
+        }
+    };
 </script>
 
 <template>
@@ -11,7 +20,7 @@
             <br>
             Lue sijoitusehdoista <span><router-link class="nav-link" to="/KittenInfo">täältä</router-link></span>.
         </p>
-        <img class="img-fluid" src="C:\Users\Tomi\Coding\FullStack\HummingCattery\humming-cattery\src\assets\images\Etusivu.jpg" width="700" height="1000">
+        <img class="img-fluid" :src="etusivuImage" width="700" height="1000">
     </div>
 </template>
 
