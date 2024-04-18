@@ -1,9 +1,12 @@
 <script>
+    import FacebookIcon from '../components/icons/Facebook_icon.svg'
+    import InstagramIcon from '../components/icons/Instagram_icon.svg'
+    
     export default {
         data() {
             return {
-                facebookImgUrl: import.meta.env.VITE_FACEBOOKIMGURL,
-                instagramImgUrl: import.meta.env.VITE_INSTAGRAMIMGURL
+                facebookIcon: FacebookIcon,
+                instagramIcon: InstagramIcon
             };
         }
     };
@@ -23,7 +26,7 @@
                         role="button"
                         data-mdb-ripple-color="dark"
                         target="blank_">
-                        <img class="icon-image" :src="facebookImgUrl" alt="Facebook icon">
+                        <img class="icon-image" :src="facebookIcon" alt="Facebook icon">
                     </a>
 
                     <!-- Instagram -->
@@ -33,7 +36,7 @@
                         role="button"
                         data-mdb-ripple-color="dark"
                         target="blank_">
-                        <img class="icon-image" :src="instagramImgUrl" alt="Instagram icon">
+                        <img class="icon-image" :src="instagramIcon" alt="Instagram icon">
                     </a>
                     </section>
                 </div>

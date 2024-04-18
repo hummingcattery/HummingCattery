@@ -1,11 +1,13 @@
 <script>
+    import Pentue4Img from '../assets/images/pentue_04.jpg'
+    
     export default {
         data() {
             return {
-                pentue4ImgUrl: import.meta.env.VITE_PENTUE4IMGURL
+                pentue4Img: Pentue4Img
             };
         }
-    }
+    };
 </script>
 
 <template>
@@ -60,7 +62,7 @@
           </div>
         </div>
 
-        <img class="img-fluid" title="4. pentue" :src="pentue4ImgUrl" alt="4. pentue" width="1600" height="1200">
+        <img class="img-fluid" title="4. pentue" :src="pentue4Img" alt="4. pentue" width="1600" height="1200">
     </div>
 </template>
 

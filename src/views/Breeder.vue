@@ -1,11 +1,13 @@
 <script>
+    import BreederImg from '../assets/images/Breeder.jpg'
+    
     export default {
         data() {
             return {
-                breederImgUrl: import.meta.env.VITE_BREEDERIMGURL
+                breederImage: BreederImg
             };
         }
-    }
+    };
 </script>
 
 <template>
@@ -36,7 +38,7 @@
             Näiden kissojen (Harppu & Halka) jäätyä eläkkeelle oli näyttelyistä useamman vuoden tauko, mutta vuonna 2022 pääsimme taas aloittamaan näyttelyttämisen, kun Hillevi muutti meille.
         </p>
         <div class="image-container">
-            <img :src="breederImgUrl" alt="Jenni">
+            <img :src="breederImg" alt="Jenni">
         </div>
     </div>
     

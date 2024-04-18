@@ -1,12 +1,15 @@
 <script>
+    import HalkaImg from '../assets/images/Halka_01.jpg'
+    import HeklaImg from '../assets/images/Hekla_01.jpeg'
+    
     export default {
         data() {
             return {
-                halkaImgUrl: import.meta.env.VITE_HALKAIMGURL,
-                heklaImgUrl: import.meta.env.VITE_HEKLAIMGURL
+                halkaImg: HalkaImg,
+                heklaImg: HeklaImg
             };
         }
-    }
+    };
 </script>
 
 <template>
@@ -27,7 +30,7 @@
                 <span>Vuoden kissa 2014</span>
             </p>
             <div col-3>
-                <img class="img-fluid" title="SC FI*Recknagel Tairapänks" :src="halkaImgUrl" alt="Halka" width="900" height="600">
+                <img class="img-fluid" title="SC FI*Recknagel Tairapänks" :src="halkaImg" alt="Halka" width="900" height="600">
             </div>
         </div>
 
@@ -49,7 +52,7 @@
                     <span>Useampi BIV & NOM pentuluokissa. Hekla ei ole näyttelytasoinen, joten aikuisena ei ole käyty näyttelyissä. :)</span>
                 </p>
                 <div col-3>
-                    <img class="img-fluid" title="Hekla" :src="heklaImgUrl" alt="Hekla" width="1200" height="1600">
+                    <img class="img-fluid" title="Hekla" :src="heklaImg" alt="Hekla" width="1200" height="1600">
                 </div>
             </p>
         </div>

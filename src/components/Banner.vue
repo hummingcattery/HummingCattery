@@ -1,8 +1,10 @@
 <script>
+    import BannerImg from '../assets/images/Banner.jpg'
+    
     export default {
         data() {
             return {
-                bannerImgUrl: import.meta.env.VITE_BANNERIMGURL
+                bannerImage: BannerImg
             };
         }
     };
@@ -12,7 +14,7 @@
     <div class="banner">
         <div class="banner-content">
             <div class="container">
-                <img class="banner-image" :src="bannerImgUrl" alt="Banner" width="828" height="315">
+                <img class="banner-image" :src="bannerImage" alt="Banner" width="828" height="315">
             </div>
         </div>
     </div>

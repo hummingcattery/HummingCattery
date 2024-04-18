@@ -1,11 +1,13 @@
 <script>
+    import HarppuImg from '../assets/images/Harppu_01.jpg'
+    
     export default {
         data() {
             return {
-                harppuImgUrl: import.meta.env.VITE_HARPPUIMGURL
+                harppuImg: HarppuImg
             };
         }
-    }
+    };
 </script>
 
 <template>
@@ -26,7 +28,7 @@
                 <span>Multi BIS, BIV, NOM -winner</span>
             </p>
             <div>
-                <img class="img-fluid" title="SC FI*Zhamanen Harlequin, DVM" :src="harppuImgUrl" alt="Harppu" width="900" height="660">
+                <img class="img-fluid" title="SC FI*Zhamanen Harlequin, DVM" :src="harppuImage" alt="Harppu" width="900" height="660">
             </div>
         </div>
   </div>

@@ -1,12 +1,15 @@
 <script>
+    import HilleviImg from '../assets/images/Hillevi_01.jpg'
+    import HuldaImg from '../assets/images/Hulda_01.jpg'
+    
     export default {
         data() {
             return {
-                hilleviImgUrl: import.meta.env.VITE_HILLEVIIMGURL,
-                huldaImgUrl: import.meta.env.VITE_HULDAIMGURL
+                hilleviImg: HilleviImg,
+                huldaImg: HuldaImg
             };
         }
-    }
+    };
 </script>
 
 <template>
@@ -21,7 +24,7 @@
             <p>Näyttelymenestys (nuorten luokka): 3xBIV, 5xNOM, 1xBIS</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=296517" target="_blank">Sukutaulu</a>
             <div>
-                <img class="img-fluid" title="Demi Johnnatarie -E" :src="hilleviImgUrl" alt="Hillevi" width="1300" height="953">
+                <img class="img-fluid" title="Demi Johnnatarie -E" :src="hilleviImg" alt="Hillevi" width="1300" height="953">
             </div>
         </div>
 
@@ -36,7 +39,7 @@
             <p>Näyttelymenestys (pennut): Kitten Champion, 2xNOM</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=323820" target="_blank">Sukutaulu</a>
             <div>
-                <img class="img-fluid" title="Unica vom Lilienweg" :src="huldaImgUrl" alt="Hulda" width="700" height="1000">
+                <img class="img-fluid" title="Unica vom Lilienweg" :src="huldaImg" alt="Hulda" width="700" height="1000">
             </div>
         </div>
   </div>

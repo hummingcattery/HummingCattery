@@ -1,12 +1,14 @@
 <script>
     import 'bootstrap/dist/css/bootstrap.min.css';
+    import Pentue1Img from '../assets/images/pentue_01.jpg'
+    
     export default {
         data() {
             return {
-                pentue1ImgUrl: import.meta.env.VITE_PENTUE1IMGURL
+                pentue1Img: Pentue1Img
             };
         }
-    }
+    };
 </script>
 
 <template>
@@ -54,7 +56,7 @@
             </div>
         </div>
 
-        <img class="img-fluid" title="1. pentue" :src="pentue1ImgUrl" alt="1. pentue" width="903" height="570">
+        <img class="img-fluid" title="1. pentue" :src="pentue1Img" alt="1. pentue" width="903" height="570">
     </div>
 </template>
 

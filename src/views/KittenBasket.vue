@@ -1,12 +1,15 @@
 <script>
+    import ValmaImg from '../assets/images/Valma_01.jpg'
+    import VilmaImg from '../assets/images/Vilma_01.jpg'
+    
     export default {
         data() {
             return {
-                valmaImgUrl: import.meta.env.VITE_VALMAIMGURL,
-                vilmaImgUrl: import.meta.env.VITE_VILMAIMGURL
+                valmaImg: ValmaImg,
+                vilmaImg: VilmaImg
             };
         }
-    }
+    };
 </script>
 
 <template>
@@ -59,8 +62,8 @@
         </div>
         
         <div class="row">
-            <img class="column" title="Valma" :src="valmaImgUrl" alt="Valma">
-            <img class="column" title="Vilma" :src="vilmaImgUrl" alt="Vilma">
+            <img class="column" title="Valma" :src="valmaImg" alt="Valma">
+            <img class="column" title="Vilma" :src="vilmaImg" alt="Vilma">
         </div>
     </div>
 </template>
