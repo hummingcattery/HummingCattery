@@ -1,11 +1,4 @@
 <script>
-    export default {
-        data() {
-            return {
-                etusivuImgUrl: import.meta.env.VITE_ETUSIVUIMGURL
-            };
-        }
-    };
 </script>
 
 <template>
@@ -18,7 +11,7 @@
             <br>
             Lue sijoitusehdoista <span><router-link class="nav-link" to="/KittenInfo">täältä</router-link></span>.
         </p>
-        <img class="img-fluid" :src="etusivuImgUrl" width="700" height="1000">
+        <img class="img-fluid" src="C:\Users\Tomi\Coding\FullStack\HummingCattery\humming-cattery\src\assets\images\Etusivu.jpg" width="700" height="1000">
     </div>
 </template>
 
