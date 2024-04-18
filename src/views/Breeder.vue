@@ -4,7 +4,7 @@
     export default {
         data() {
             return {
-                breederImage: BreederImg
+                breederImg: BreederImg
             };
         }
     };

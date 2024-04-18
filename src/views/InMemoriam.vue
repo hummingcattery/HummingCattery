@@ -28,7 +28,7 @@
                 <span>Multi BIS, BIV, NOM -winner</span>
             </p>
             <div>
-                <img class="img-fluid" title="SC FI*Zhamanen Harlequin, DVM" :src="harppuImage" alt="Harppu" width="900" height="660">
+                <img class="img-fluid" title="SC FI*Zhamanen Harlequin, DVM" :src="harppuImg" alt="Harppu" width="900" height="660">
             </div>
         </div>
   </div>
