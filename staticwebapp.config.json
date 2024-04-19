@@ -16,56 +16,59 @@
       },
       {
         "route": "/Kastraatit",
-        "rewrite": "route"
+        "rewrite": "/Kastraatit"
       },
       {
         "route": "/Muistoissa",
-        "rewrite": "route"
+        "rewrite": "/Muistoissa"
       },
       {
         "route": "/Uutiset",
-        "rewrite": "route"
+        "rewrite": "/Uutiset"
       },
       {
         "route": "/Pentukori",
-        "rewrite": "route"
+        "rewrite": "/Pentukori"
       },
       {
         "route": "/Pentu-info",
-        "rewrite": "route"
+        "rewrite": "/Pentu-info"
       },
       {
         "route": "/Kasvattaja",
-        "rewrite": "route"
+        "rewrite": "/Kasvattaja"
       },
       {
         "route": "/OtaYhteytta",
-        "rewrite": "route"
+        "rewrite": "/OtaYhteytta"
       },
       {
         "route": "/1pentue",
-        "rewrite": "route"
+        "rewrite": "/1pentue"
       },
       {
         "route": "/2pentue",
-        "rewrite": "route"
+        "rewrite": "/2pentue"
       },
       {
         "route": "/3pentue",
-        "rewrite": "route"
+        "rewrite": "/3pentue"
       },
       {
         "route": "/4pentue",
-        "rewrite": "route"
+        "rewrite": "/4pentue"
       },
       {
         "route": "/5pentue",
-        "rewrite": "route"
+        "rewrite": "/5pentue"
       }
   ],
+  "globalHeaders": {
+    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
+  },
   "navigationFallback": {
     "rewrite": "/index.html"
-  }
+  },
   "responseOverrides":
   {
     "404":
