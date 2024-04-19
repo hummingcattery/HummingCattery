@@ -68,7 +68,7 @@
   },
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/src/assets/images/*.{png,jpg,gif}", "/src/style.css"]
+    "exclude": ["/src/assets/images/*.{png,jpg,gif}", "/src/style.css", "/src/components/icons/*.{svg}"]
   },
   "responseOverrides":
   {
