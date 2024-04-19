@@ -28,10 +28,8 @@
     }
 
     .banner-image {
-        // height: 2rem;
-        // width: 2rem;
-        object-fit: contain;
         width: 100%;
+        height: 20rem;
     }
 
     .banner-content {
