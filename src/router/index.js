@@ -25,42 +25,42 @@ const routes = [
     component: Home,
   },
   {
-    path: "/Mollies",
+    path: "/Naaraat",
     name: "Mollies",
     component: Mollies,
   },
   {
-    path: "/Castrates",
+    path: "/Kastraatit",
     name: "Castrates",
     component: Castrates,
   },
   {
-    path: "/InMemoriam",
+    path: "/Muistoissa",
     name: "InMemoriam",
     component: InMemoriam,
   },
   {
-    path: "/News",
+    path: "/Uutiset",
     name: "News",
     component: News,
   },
   {
-    path: "/KittenBasket",
+    path: "/Pentukori",
     name: "KittenBasket",
     component: KittenBasket,
   },
   {
-    path: "/KittenInfo",
+    path: "/Pentu-info",
     name: "KittenInfo",
     component: KittenInfo,
   },
   {
-    path: "/Breeder",
+    path: "/Kasvattaja",
     name: "Breeder",
     component: Breeder,
   },
   {
-    path: "/Contact",
+    path: "/OtaYhteytta",
     name: "Contact",
     component: Contact,
   },
@@ -89,10 +89,14 @@ const routes = [
     name: "5pentue",
     component: Pentue5,
   },
+  // {
+  //   path: '/:pathMatch(.*)',
+  //   component: NotFoundComponent
+  // }
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/"),
   routes
 })
 

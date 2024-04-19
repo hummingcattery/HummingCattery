@@ -16,19 +16,19 @@
                                     <router-link class="nav-link" to="/Humming">Etusivu</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/News">Uutiset</router-link>
+                                    <router-link class="nav-link" to="/Uutiset">Uutiset</router-link>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kissat</a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <!-- <li><a class="dropdown-item" href="#">Naaraat</a></li> -->
-                                        <li><router-link class="nav-link" to="/Mollies">Naaraat</router-link></li>
-                                        <li><router-link class="nav-link" to="/Castrates">Kastraatit</router-link></li>
-                                        <li><router-link class="nav-link" to="/InMemoriam">Muistoissa</router-link></li>
+                                        <li><router-link class="nav-link" to="/Naaraat">Naaraat</router-link></li>
+                                        <li><router-link class="nav-link" to="/Kastraatit">Kastraatit</router-link></li>
+                                        <li><router-link class="nav-link" to="/Muistoissa">Muistoissa</router-link></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/KittenBasket">Pentukori</router-link>
+                                    <router-link class="nav-link" to="/Pentukori">Pentukori</router-link>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pentueet</a>
@@ -43,9 +43,9 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kissala</a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><router-link class="nav-link" to="/Breeder">Kasvattaja</router-link></li>
-                                        <li><router-link class="nav-link" to="/KittenInfo">Pentu-info</router-link></li>
-                                        <li><router-link class="nav-link" to="/Contact">Ota yhteyttä</router-link></li>
+                                        <li><router-link class="nav-link" to="/Kasvattaja">Kasvattaja</router-link></li>
+                                        <li><router-link class="nav-link" to="/Pentu-info">Pentu-info</router-link></li>
+                                        <li><router-link class="nav-link" to="/OtaYhteytta">Ota yhteyttä</router-link></li>
                                     </ul>
                                 </li>
                             </ul>
