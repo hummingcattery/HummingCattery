@@ -1,19 +1,19 @@
 {
     "routes": [
-      { "route": "/", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/Humming", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/Naaraat", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/Kastraatit", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/Muistoissa", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/Uutiset", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/Pentukori", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/Pentu-info", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/Kasvattaja", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/OtaYhteytta", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/1pentue", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/2pentue", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/3pentue", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/4pentue", "serve": "/index.html", "statusCode": 404 },
-      { "route": "/5pentue", "serve": "/index.html", "statusCode": 404 }
+      { "route": "/", "action": "route" },
+      { "route": "/Humming", "action": "route" },
+      { "route": "/Naaraat", "action": "route" },
+      { "route": "/Kastraatit", "action": "route" },
+      { "route": "/Muistoissa", "action": "route" },
+      { "route": "/Uutiset", "action": "route" },
+      { "route": "/Pentukori", "action": "route" },
+      { "route": "/Pentu-info", "action": "route" },
+      { "route": "/Kasvattaja", "action": "route" },
+      { "route": "/OtaYhteytta", "action": "route" },
+      { "route": "/1pentue", "action": "route" },
+      { "route": "/2pentue", "action": "route" },
+      { "route": "/3pentue", "action": "route" },
+      { "route": "/4pentue", "action": "route" },
+      { "route": "/5pentue", "action": "route" }
     ]
-  }
+}
