@@ -72,7 +72,7 @@
     {
       "404":
       {
-        "rewrite": "/custom-404.html"
+        "rewrite": "index.html"
       }
     }
 }
