@@ -1,19 +1,78 @@
 {
-    "routes": [
-      { "route": "/", "action": "route" },
-      { "route": "/Humming", "action": "route" },
-      { "route": "/Naaraat", "action": "route" },
-      { "route": "/Kastraatit", "action": "route" },
-      { "route": "/Muistoissa", "action": "route" },
-      { "route": "/Uutiset", "action": "route" },
-      { "route": "/Pentukori", "action": "route" },
-      { "route": "/Pentu-info", "action": "route" },
-      { "route": "/Kasvattaja", "action": "route" },
-      { "route": "/OtaYhteytta", "action": "route" },
-      { "route": "/1pentue", "action": "route" },
-      { "route": "/2pentue", "action": "route" },
-      { "route": "/3pentue", "action": "route" },
-      { "route": "/4pentue", "action": "route" },
-      { "route": "/5pentue", "action": "route" }
-    ]
+    "trailingSlash": "auto",
+    "routes":
+    [
+        {
+          "route": "/",
+          "action": "route"
+        },
+        {
+          "route": "/Humming",
+          "action": "route"
+        },
+        {
+          "route": "/Naaraat",
+          "action": "route"
+        },
+        {
+          "route": "/Kastraatit",
+          "action": "route"
+        },
+        {
+          "route": "/Muistoissa",
+          "action": "route"
+        },
+        {
+          "route": "/Uutiset",
+          "action": "route"
+        },
+        {
+          "route": "/Pentukori",
+          "action": "route"
+        },
+        {
+          "route": "/Pentu-info",
+          "action": "route"
+        },
+        {
+          "route": "/Kasvattaja",
+          "action": "route"
+        },
+        {
+          "route": "/OtaYhteytta",
+          "action": "route"
+        },
+        {
+          "route": "/1pentue",
+          "action": "route"
+        },
+        {
+          "route": "/2pentue",
+          "action": "route"
+        },
+        {
+          "route": "/3pentue",
+          "action": "route"
+        },
+        {
+          "route": "/4pentue",
+          "action": "route"
+        },
+        {
+          "route": "/5pentue",
+          "action": "route"
+        }
+    ],
+    "navigationFallback":
+    {
+      "rewrite": "index.html",
+      "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+    },
+    "responseOverrides":
+    {
+      "404":
+      {
+        "rewrite": "/custom-404.html"
+      }
+    }
 }
