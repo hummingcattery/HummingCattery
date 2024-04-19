@@ -1,78 +1,78 @@
 {
-    "trailingSlash": "auto",
-    "routes":
-    [
-        {
-          "route": "/",
-          "action": "route"
-        },
-        {
-          "route": "/Humming",
-          "action": "route"
-        },
-        {
-          "route": "/Naaraat",
-          "action": "route"
-        },
-        {
-          "route": "/Kastraatit",
-          "action": "route"
-        },
-        {
-          "route": "/Muistoissa",
-          "action": "route"
-        },
-        {
-          "route": "/Uutiset",
-          "action": "route"
-        },
-        {
-          "route": "/Pentukori",
-          "action": "route"
-        },
-        {
-          "route": "/Pentu-info",
-          "action": "route"
-        },
-        {
-          "route": "/Kasvattaja",
-          "action": "route"
-        },
-        {
-          "route": "/OtaYhteytta",
-          "action": "route"
-        },
-        {
-          "route": "/1pentue",
-          "action": "route"
-        },
-        {
-          "route": "/2pentue",
-          "action": "route"
-        },
-        {
-          "route": "/3pentue",
-          "action": "route"
-        },
-        {
-          "route": "/4pentue",
-          "action": "route"
-        },
-        {
-          "route": "/5pentue",
-          "action": "route"
-        }
-    ],
-    "navigationFallback":
-    {
-      "rewrite": "index.html",
-      "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
-    },
-    "responseOverrides":
-    {
-      "404":
+  "trailingSlash": "auto",
+  "routes":
+  [
       {
-        "rewrite": "index.html"
+        "route": "/",
+        "rewrite": "/Humming"
+      },
+      {
+        "route": "/Humming",
+        "rewrite": "/Humming"
+      },
+      {
+        "route": "/Naaraat",
+        "rewrite": "/Naaraat"
+      },
+      {
+        "route": "/Kastraatit",
+        "rewrite": "route"
+      },
+      {
+        "route": "/Muistoissa",
+        "rewrite": "route"
+      },
+      {
+        "route": "/Uutiset",
+        "rewrite": "route"
+      },
+      {
+        "route": "/Pentukori",
+        "rewrite": "route"
+      },
+      {
+        "route": "/Pentu-info",
+        "rewrite": "route"
+      },
+      {
+        "route": "/Kasvattaja",
+        "rewrite": "route"
+      },
+      {
+        "route": "/OtaYhteytta",
+        "rewrite": "route"
+      },
+      {
+        "route": "/1pentue",
+        "rewrite": "route"
+      },
+      {
+        "route": "/2pentue",
+        "rewrite": "route"
+      },
+      {
+        "route": "/3pentue",
+        "rewrite": "route"
+      },
+      {
+        "route": "/4pentue",
+        "rewrite": "route"
+      },
+      {
+        "route": "/5pentue",
+        "rewrite": "route"
       }
+  ],
+  "navigationFallback":
+  {
+    "rewrite": "index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+  },
+  "responseOverrides":
+  {
+    "404":
+    {
+      "rewrite": "index.html"
     }
+  }
 }
