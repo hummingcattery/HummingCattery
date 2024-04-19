@@ -29,7 +29,7 @@
 
     .banner-image {
         width: 100%;
-        height: 20rem;
+        height: 1%;
     }
 
     .banner-content {
