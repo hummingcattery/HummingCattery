@@ -18,7 +18,7 @@
         <p>
             Meillä on pentuja! Etsinnässä kaksi eri sijoituskotia PK-seudulta tai sopimuksen mukaan myös esim. Pirkanmaalta. Mahdollista myös sijoittaa molemmat tytöt samaan kotiin.
             <br>
-            Lue sijoitusehdoista <span><router-link class="nav-link" to="/KittenInfo">täältä</router-link></span>.
+            Lue sijoitusehdoista <span><router-link class="nav-link" to="/Pentu-info">täältä</router-link></span>.
         </p>
         <img class="img-fluid" :src="etusivuImage" width="700" height="1000">
     </div>
