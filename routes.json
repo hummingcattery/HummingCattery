@@ -1,0 +1,19 @@
+{
+    "routes": [
+      { "route": "/", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/Humming", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/Naaraat", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/Kastraatit", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/Muistoissa", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/Uutiset", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/Pentukori", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/Pentu-info", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/Kasvattaja", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/OtaYhteytta", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/1pentue", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/2pentue", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/3pentue", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/4pentue", "serve": "/index.html", "statusCode": 200 },
+      { "route": "/5pentue", "serve": "/index.html", "statusCode": 200 }
+    ]
+  }
