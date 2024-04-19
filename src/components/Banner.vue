@@ -14,7 +14,7 @@
     <div class="banner">
         <div class="banner-content">
             <div class="container">
-                <img class="banner-image" :src="bannerImage" alt="Banner" width="828" height="315">
+                <img class="banner-image center" :src="bannerImage" alt="Banner" width="828" height="315">
             </div>
         </div>
     </div>
@@ -25,18 +25,17 @@
     .banner {
         width: auto;
         background-color: #F8F3FC;
+        
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
     }
 
     .banner-image {
-        width: 100%;
-        height: 1%;
-    }
-
-    .banner-content {
-        align-items: center;
-    }
-
-    div > p {
-        color: black;
+        max-width: 100%; /* Ensures the image does not exceed its container's width */
+        height: auto; /* Maintains aspect ratio */
     }
 </style>
