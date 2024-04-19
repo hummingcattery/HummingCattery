@@ -31,7 +31,7 @@
         <p>
             Sijoituskissa on loistava tapa päästä tutustumaan kasvatukseen, vaikka kaikissa tapauksissa sijoituskodin ei tarvitsekaan sitoutua pentuvaiheeseen. Sijoituskodit
             ovat välttämätön apu kasvatustyössä, kun kasvattajan oman kodin kissamäärää ei ole järkevä kasvattaa. Humming-kissalassa kaikki kissat, jotka jäävät kotiin, elävät
-            kotona alusta loppuun asti, eli meillä yksikään kissa ei lähde aikuisena "kiertoon", ellei tähän ole jotain todella painavaa syytä (kuten kissojen väliset muuttuneet
+            kotona alusta loppuun asti, eli meillä yksikään kissa ei etsi aikuisena uutta kotia, ellei tähän ole jotain todella painavaa syytä (kuten kissojen väliset muuttuneet
             kemiat tms.). Meillä jokainen kasvatuskissa on siis rakas lemmikki ja oman kodin perheenjäsen. Tästä syystä, jotta kasvatusta on ylipäänsä mahdollista jatkaa, ovat
             sijoituskodit kasvattajalle kullanarvoisia.
         </p>
