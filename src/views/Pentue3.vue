@@ -43,7 +43,7 @@
                   </tr>
                   <tr>
                     <td>Humming Staralfur</td>
-                    <td>SBI b 21</td>
+                    <td>SBI a 21</td>
                     <td>uros</td>
                     <td>Lemmikki</td>
                   </tr>
