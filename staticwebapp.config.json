@@ -67,7 +67,8 @@
     "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
   },
   "navigationFallback": {
-    "rewrite": "/index.html"
+    "rewrite": "/index.html",
+    "exclude": ["*/images/*.{png,jpg,gif}", "/css/*"]
   },
   "responseOverrides":
   {
