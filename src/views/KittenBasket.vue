@@ -1,12 +1,16 @@
 <script>
-    import ValmaImg from '../assets/images/Valma_01.jpg'
-    import VilmaImg from '../assets/images/Vilma_01.jpg'
+    import PentukoriImg01 from "../assets/images/Pentukori_01.jpg"
+    import PentukoriImg02 from "../assets/images/Pentukori_02.jpg"
+    import ValmaImg from "../assets/images/Valma_01.jpg"
+    import VilmaImg from "../assets/images/Vilma_01.jpg"
     
     export default {
         data() {
             return {
                 valmaImg: ValmaImg,
-                vilmaImg: VilmaImg
+                vilmaImg: VilmaImg,
+                pentukori01Img: PentukoriImg01,
+                pentukori02Img: PentukoriImg02
             };
         }
     };
@@ -62,6 +66,8 @@
         </div>
         
         <div class="row">
+            <img class="column" title="Vilma & Valma" :src="pentukori01Img" alt="Vilma & Valma">
+            <img class="column" title="Vilma & Valma" :src="pentukori02Img" alt="Vilma & Valma">
             <img class="column" title="Valma" :src="valmaImg" alt="Valma">
             <img class="column" title="Vilma" :src="vilmaImg" alt="Vilma">
         </div>
