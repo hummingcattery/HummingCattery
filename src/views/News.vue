@@ -6,10 +6,12 @@
     <div class="content-container">
         <p><strong>29.4.2024</strong></p>
         <p>
-        Pennut täyttivät tänään 9 viikkoa, vauhtia ja vaarallisia tilanteita riittää. Pentujen ensimmäinen rokotus on varattu 20.5. päivälle, jolloin pennut saavat myös mikrosirut.<br>
-        Nykyiset rokotussuositukset ovat sellaiset, että ensimmäinen rokote suositellaan annettavan 12 viikon iässä, ja toinen tästä 3-4 viikon päästä. Täten meillä pennut tulevat olemaan <br>
-        luovutuskypsiä vasta 16-viikkoisina, täydellä rokotussuojalla. Pennuista on tullut jonkin verran kyselyjä (lähinnä lemmikkikoteihin), mutta nämä pennut etsivät edelleen ensisijassa sijoituskoteja. <br>
-        Tärkeintä on, että tästä pentueesta molemmille tytöille tulee mahdollisuus suvun jatkolle. Otathan rohkeasti yhteyttä, jos sijoituskotina toimiminen yhtään kiinnostaa! :) 
+        Pennut täyttivät tänään 9 viikkoa, vauhtia ja vaarallisia tilanteita riittää. Pentujen ensimmäinen rokotus on varattu 20.5. päivälle, jolloin pennut saavat myös mikrosirut. <br>
+        Nykyiset rokotussuositukset ovat sellaiset, että ensimmäinen rokote suositellaan annettavan 12 viikon iässä, ja toinen tästä 3-4 viikon päästä. Täten meillä pennut tulevat olemaan
+        luovutuskypsiä vasta 16-viikkoisina, täydellä rokotussuojalla. <br>
+        Pennuista on tullut jonkin verran kyselyjä (lähinnä lemmikkikoteihin), mutta nämä pennut etsivät edelleen ensisijassa sijoituskoteja.
+        Tärkeintä on, että tästä pentueesta molemmille tytöille tulee mahdollisuus suvun jatkolle.<br>
+        Otathan rohkeasti yhteyttä, jos sijoituskotina toimiminen yhtään kiinnostaa! :) 
         </p>
     </div>
     
