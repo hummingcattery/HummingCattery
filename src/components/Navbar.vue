@@ -10,8 +10,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <div class="d-flex justify-content-around">
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
                                     <router-link class="nav-link" to="/Humming">Etusivu</router-link>
                                 </li>
@@ -49,7 +48,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
                     </div>
                 </div>
             </nav>
