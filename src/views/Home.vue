@@ -1,5 +1,5 @@
 <script>
-    import EtusivuImage from '../assets/images/Etusivu.jpg'
+    import EtusivuImage from '../assets/images/Etusivu_01.jpg'
     
     export default {
         data() {
