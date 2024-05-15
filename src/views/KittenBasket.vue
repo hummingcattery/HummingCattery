@@ -1,6 +1,10 @@
 <script>
     import PentukoriImg01 from "../assets/images/Pentukori_01.jpg"
     import PentukoriImg02 from "../assets/images/Pentukori_02.jpg"
+    import PentukoriImg03 from "../assets/images/Pentukori_03.jpg"
+    import PentukoriImg04 from "../assets/images/Pentukori_04.jpg"
+    import PentukoriImg05 from "../assets/images/Pentukori_05.jpg"
+    import PentukoriImg06 from "../assets/images/Pentukori_06.jpg"
     import ValmaImg from "../assets/images/Valma_01.jpg"
     import VilmaImg from "../assets/images/Vilma_01.jpg"
     
@@ -10,7 +14,11 @@
                 valmaImg: ValmaImg,
                 vilmaImg: VilmaImg,
                 pentukori01Img: PentukoriImg01,
-                pentukori02Img: PentukoriImg02
+                pentukori02Img: PentukoriImg02,
+                pentukori03Img: PentukoriImg03,
+                pentukori04Img: PentukoriImg04,
+                pentukori05Img: PentukoriImg05,
+                pentukori06Img: PentukoriImg06
             };
         }
     };
@@ -66,6 +74,10 @@
         </div>
         
         <div class="row">
+            <img class="column" title="Vilma & Valma" :src="pentukori03Img" alt="Vilma & Valma">
+            <img class="column" title="Vilma & Valma" :src="pentukori04Img" alt="Vilma & Valma">
+            <img class="column" title="Vilma" :src="pentukori05Img" alt="Vilma">
+            <img class="column" title="Valma" :src="pentukori06Img" alt="Valma">
             <img class="column" title="Vilma & Valma" :src="pentukori01Img" alt="Vilma & Valma">
             <img class="column" title="Vilma & Valma" :src="pentukori02Img" alt="Vilma & Valma">
             <img class="column" title="Valma" :src="valmaImg" alt="Valma">
