@@ -40,8 +40,8 @@
             Sijoitussopimus (pentujen hoidon osalta) voidaan laatia muutamalla eri tavalla.<br>
         <ol>
             <li>Sijoituskissa saa pennut sijoituskodissa ja pennut kasvavat sijoituskodissa kunnes täyttävät 14 viikkoa.</li>
-            <li>Sijoituskissa muuttaa sijoituskotiin n. 1-2 viikkoa ennen synnytystä ja pennut asuvat kasvattajalla n. ensimmäiset 4 viikkoa, jonka jälkeen emo ja pennut muuttavat sijoituskotiin</li>
-            <li>Sijoituskissa muuttaa sijoituskotiin n. 1-2 viikkoa ennen synnytystä ja pysyy sijoituskodissa kunnes pennut ovat 14 viikkoisia.</li>
+            <li>Sijoituskissa muuttaa kasvattajan kotiin n. 1-2 viikkoa ennen synnytystä ja pennut asuvat kasvattajalla n. ensimmäiset 4 viikkoa, jonka jälkeen emo ja pennut muuttavat sijoituskotiin</li>
+            <li>Sijoituskissa muuttaa kasvattajan kotiin n. 1-2 viikkoa ennen synnytystä ja pysyy kasvattajalla kunnes pennut ovat 14 viikkoisia.</li>
         </ol>
         </p>
 
