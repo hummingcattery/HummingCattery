@@ -2,6 +2,17 @@
     <div>
         <h1>Uutiset</h1>
     </div>
+    
+    <div class="content-container">
+        <p><strong>23.6.2024</strong></p>
+        <p>
+        Hillevin pennut tulivat luovutusikään kesäkuun puolenvälin paikkeilla. Alkuperäisistä suunnitelmista poiketen Valma muutti lemmikkikotiin Merikarvialle ja Vilma jäi
+        kuin jäikin kotiin. Sijoituskoteja ei siis tälle pentueelle valitettavasti löytynyt, mutta toisaalta en varmaan olisi enää pystynyt Vilmasta edes luopumaan. :). 
+        Vilman kanssa käydään kesän mittaan joissain näyttelyissä, seuraavan kerran heti ensi viikonloppuna Hämeenlinnassa.  
+        </p>
+    </div>
+    
+    <hr>
 
     <div class="content-container">
         <p><strong>29.4.2024</strong></p>
