@@ -16,7 +16,7 @@
     </div>
     <div class="content-container">
         <p>
-            Meillä on pentuja! Etsinnässä kaksi eri sijoituskotia PK-seudulta tai sopimuksen mukaan myös esim. Pirkanmaalta. Mahdollista myös sijoittaa molemmat tytöt samaan kotiin.
+            Meillä ei ole tällä hetkellä pentuja vapaana, mutta seuraava pentue on suunnitteilla 2024-2025 vaihteeseen. Etsinnässä erityisesti sijoituksesta kiinnostuneita koteja.
             <br>
             Lue sijoitusehdoista <span><router-link class="nav-link" to="/Pentu-info">täältä</router-link></span>.
         </p>
