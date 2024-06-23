@@ -17,7 +17,7 @@
 
     <div class="content-container">
       <h2>Demi JohnNatarie -E - US*Kyatwo T'Challa's Glory</h2>
-      <p>s. 26.2.2024</p>
+      <p>Synt. 26.2.2024</p>
     </div>
     
     <h3>Pennut</h3>
