@@ -31,58 +31,8 @@
 
     <div class="content-container">
         <p>
-            Meillä on pentuja yhdistelmästä Demi JohnNatarie -E - US*Kyatwo T'Challa's Glory
+           Suunnitelmissa pentue Huldalle 2024-2025
         </p>
-        <p>
-            s. 26.2.2024
-        </p>
-    </div>
-
-    <div class="content-container">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <table class="table table-bordered custom-table">
-                        <tbody>
-                            <tr>
-                                <th>Nimi</th>
-                                <th>Sukupuoli</th>
-                                <th>Väri</th>
-                                <th>Taso</th>
-                                <th>Tila</th>
-                            </tr>
-
-                            <tr>
-                                <td>FI*Humming California Dreamin'</td>
-                                <td>naaras</td>
-                                <td>SBI n</td>
-                                <td>siitostasoinen, sijoitukseen</td>
-                                <td>Vapaa</td>
-                            </tr>
-
-                            <tr>
-                                <td class="custom-table-data">Fi*Humming California Girls</td>
-                                <td>naaras</td>
-                                <td>SBI n</td>
-                                <td>näyttelytasoinen, sijoitukseen</td>
-                                <td>Vapaa</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <img class="column" title="Vilma & Valma" :src="pentukori03Img" alt="Vilma & Valma">
-            <img class="column" title="Vilma & Valma" :src="pentukori04Img" alt="Vilma & Valma">
-            <img class="column" title="Vilma" :src="pentukori05Img" alt="Vilma">
-            <img class="column" title="Valma" :src="pentukori06Img" alt="Valma">
-            <img class="column" title="Vilma & Valma" :src="pentukori01Img" alt="Vilma & Valma">
-            <img class="column" title="Vilma & Valma" :src="pentukori02Img" alt="Vilma & Valma">
-            <img class="column" title="Valma" :src="valmaImg" alt="Valma">
-            <img class="column" title="Vilma" :src="vilmaImg" alt="Vilma">
-        </div>
     </div>
 </template>
 
@@ -90,6 +40,12 @@
     .content-container {
         background-color: #F8F3FC;
         padding: 2rem;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
     }
 
     tr > th {
