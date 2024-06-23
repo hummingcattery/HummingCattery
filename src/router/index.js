@@ -13,6 +13,7 @@ import Pentue2 from "../views/Pentue2.vue"
 import Pentue3 from "../views/Pentue3.vue"
 import Pentue4 from "../views/Pentue4.vue"
 import Pentue5 from "../views/Pentue5.vue"
+import Pentue6 from "../views/Pentue6.vue"
 
 const routes = [
   {
@@ -88,6 +89,11 @@ const routes = [
     path: "/5pentue",
     name: "5pentue",
     component: Pentue5,
+  },
+  {
+    path: "/6pentue",
+    name: "6pentue",
+    component: Pentue6,
   },
   // {
   //   path: '/:pathMatch(.*)',
