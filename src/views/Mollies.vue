@@ -31,12 +31,12 @@
         <hr>
 
         <div class="content-container">
-            <h5>"Hulda" JCH Unica vom Lilienweg</h5>
+            <h5>"Hulda" JCH KCH Unica vom Lilienweg</h5>
             <p>SBI b 21
                 <br>
                 s. 7.8.2023
             </p>
-            <p>Näyttelymenestys: Kitten Champion, Junior Champion, 3xNOM, 1xBIV</p>
+            <p>Näyttelymenestys: Kitten Champion, Junior Champion, 4xNOM, 1xBIV</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=323820" target="_blank">Sukutaulu</a>
             <div>
                 <img class="img-fluid" title="Unica vom Lilienweg" :src="huldaImg" alt="Hulda" width="700" height="1000">
