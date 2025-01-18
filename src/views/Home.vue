@@ -1,10 +1,12 @@
 <script>
     import EtusivuImage from '../assets/images/Etusivu_01.jpg'
+    import VilmaImage03 from '../assets/images/Vilma_03.jpg'
     
     export default {
         data() {
             return {
-                etusivuImage: EtusivuImage
+                etusivuImage: EtusivuImage,
+                vilmaImage03: VilmaImage03
             };
         }
     };
@@ -16,11 +18,16 @@
     </div>
     <div class="content-container">
         <p>
-            Meillä ei ole tällä hetkellä pentuja vapaana, mutta seuraava pentue on suunnitteilla 2024-2025 vaihteeseen. Etsinnässä erityisesti sijoituksesta kiinnostuneita koteja.
+            Meillä ei ole tällä hetkellä pentuja vapaana, mutta seuraava pentue on suunnitteilla keväälle 2025. Etsinnässä erityisesti sijoituksesta kiinnostuneita koteja.
             <br>
             Lue sijoitusehdoista <span><router-link class="nav-link" to="/Pentu-info">täältä</router-link></span>.
         </p>
         <img class="img-fluid" :src="etusivuImage" width="700" height="1000">
+
+        <div>
+            <p>11.1.2025 Vilma on uusi Junior Winner!</p>
+            <img class="img-fluid" :src="vilmaImage03" width="700" height="1000">
+        </div>
     </div>
 </template>
 
