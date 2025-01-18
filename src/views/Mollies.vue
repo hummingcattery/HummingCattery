@@ -37,8 +37,6 @@
                 this.isModalOpen = false;
             },
             showPreviousImage() {
-                console.log(this.vilmaImages.length)
-                console.log(this.selectedIndex)
                 if (this.selectedIndex > 0) {
                     this.selectedIndex--;
                 } else {
