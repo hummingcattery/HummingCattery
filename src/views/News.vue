@@ -2,6 +2,15 @@
     <div>
         <h1>Uutiset</h1>
     </div>
+
+    <div class="content-container">
+        <p><strong>23.6.2024</strong></p>
+        <p>
+        Viime päivityskerrasta on vierähtänyt puolisen vuotta. Vilmasta tuli Junior Winner saavutettuaan viidennen Best in Show -tuloksen pennuissa/nuorissa Puolan Gdyniassa 11.1.2025. :) Huldalle on toiveissa pentuja keväälle 2025, jahka kollisuunnitelmat selviävät.   
+        </p>
+    </div>
+    
+    <hr>
     
     <div class="content-container">
         <p><strong>23.6.2024</strong></p>
