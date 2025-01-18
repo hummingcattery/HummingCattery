@@ -2,15 +2,57 @@
     import HilleviImg from '../assets/images/Hillevi_01.jpg'
     import HuldaImg from '../assets/images/Hulda_01.jpg'
     import VilmaImg from '../assets/images/Vilma_02.jpg'
+    import VilmaImg1 from '../assets/images/Vilma_01.jpg'
+    import VilmaImg3 from '../assets/images/Vilma_03.jpg'
+    import VilmaImg4 from '../assets/images/Vilma_04.jpg'
     
     export default {
         data() {
             return {
                 hilleviImg: HilleviImg,
                 huldaImg: HuldaImg,
-                vilmaImg: VilmaImg
+                vilmaImg: VilmaImg,
+
+                vilmaImages: [ // Array of thumbnail image URLs
+                    VilmaImg1,
+                    VilmaImg,
+                    VilmaImg4,
+                    VilmaImg3,
+                ],
+                isModalOpen: false, // Controls the modal visibility
+                selectedIndex: 0, // Currently selected image for modal
             };
-        }
+        },
+        computed: {
+            selectedImage() {
+                return this.vilmaImages[this.selectedIndex];
+            },
+        },
+        methods: {
+            openModal(index) {
+                this.selectedIndex = index;
+                this.isModalOpen = true;
+            },
+            closeModal() {
+                this.isModalOpen = false;
+            },
+            showPreviousImage() {
+                console.log(this.vilmaImages.length)
+                console.log(this.selectedIndex)
+                if (this.selectedIndex > 0) {
+                    this.selectedIndex--;
+                } else {
+                    this.selectedIndex = this.vilmaImages.length - 1; // Loop back to the last image
+                }
+                },
+                showNextImage() {
+                if (this.selectedIndex < this.vilmaImages.length - 1) {
+                    this.selectedIndex++;
+                } else {
+                    this.selectedIndex = 0; // Loop back to the first image
+                }
+            }
+        },
     };
 </script>
 
@@ -25,8 +67,35 @@
             <p>Näyttelymenestys: 7xNOM, 6xBIS, 2xBIV, Junior Winner</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=329981" target="_blank">Sukutaulu</a>
             <div>
-                <img class="img-fluid" title="Fi*Humming California Girls" :src="vilmaImg" alt="Vilma" width="1300" height="953">
+                <img class="img-fluid scaledImg" title="Fi*Humming California Girls" :src="vilmaImg" alt="Vilma" width="1300" height="953">
+                
+                <!-- Thumbnails -->
+                <div class="thumbnail-container">
+                <img 
+                    v-for="(image, index) in vilmaImages" 
+                    :key="index" 
+                    :src="image" 
+                    alt="Thumbnail" 
+                    @click="openModal(index)"
+                />
+                </div>
             </div>
+
+            <!-- Modal -->
+            <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
+                <div class="modal-content" @click.stop>
+                    <button @click="closeModal" class="close-btn">✖</button>
+                    
+                    <!-- Previous Button -->
+                    <button class="nav-btn prev" @click="showPreviousImage">&#8592;</button>
+
+                    <img :src="selectedImage" alt="Selected picture" />
+
+                    <!-- Next Button -->
+                    <button class="nav-btn next" @click="showNextImage">&#8594;</button>
+                </div>
+            </div>
+
         </div>
 
         <hr>
@@ -41,7 +110,7 @@
             <p>Näyttelymenestys: 5xBIV, 7xNOM, 3xBIS, International Champion</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=296517" target="_blank">Sukutaulu</a>
             <div>
-                <img class="img-fluid" title="Demi Johnnatarie -E" :src="hilleviImg" alt="Hillevi" width="1300" height="953">
+                <img class="img-fluid scaledImg" title="Demi Johnnatarie -E" :src="hilleviImg" alt="Hillevi" width="1300" height="953">
             </div>
         </div>
 
@@ -56,13 +125,17 @@
             <p>Näyttelymenestys: 7xNOM, 1xBIS, 2xBIV</p>
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=323820" target="_blank">Sukutaulu</a>
             <div>
-                <img class="img-fluid" title="Unica vom Lilienweg" :src="huldaImg" alt="Hulda" width="700" height="1000">
+                <img class="img-fluid scaledImg" title="Unica vom Lilienweg" :src="huldaImg" alt="Hulda" width="700" height="1000">
             </div>
         </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+    h5 {
+        font-weight: bold;
+    }
+    
     .content-container {
         background-color: #F8F3FC;
         display: flex;
@@ -73,15 +146,115 @@
         padding: 2rem;
     }
 
-    h5 {
-        font-weight: bold;
-    }
-
-    img {
+    .scaledImg {
         object-fit: contain;
         transform: scale(0.75);
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .gallery {
+        text-align: center;
+    }
+
+    .main-picture img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    }
+
+    .thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    }
+
+    .thumbnail-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .thumbnail-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    z-index: 9999;
+    }
+
+    .modal-content {
+    background: white;       
+    padding: 20px;           
+    border-radius: 10px;     
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    }
+
+    .modal-content img {
+    max-width: 90vw;         
+    max-height: 80vh;        
+    display: block;          
+    border-radius: 5px;      
+    }
+
+    .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+    height: 50%;
+    width: 3rem;
+    }
+
+    .prev {
+    left: 10px;
+    }
+
+    .next {
+    right: 10px;
+    }
+
+    .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5e5e5e;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.2s ease;
+    }
+
+    .close-btn:hover {
+    color: #000000;
     }
 </style>
