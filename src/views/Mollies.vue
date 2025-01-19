@@ -1,257 +1,209 @@
 <script>
+    import { ref, computed } from 'vue';
     import HilleviImg1 from '../assets/images/Hillevi_01.jpg'
     import HilleviImg2 from '../assets/images/Hillevi_02.jpg'
     import HilleviImg3 from '../assets/images/Hillevi_03.jpg'
     import HilleviImg4 from '../assets/images/Hillevi_04.jpg'
     import HilleviImg5 from '../assets/images/Hillevi_05.jpg'
     import HilleviImg6 from '../assets/images/Hillevi_06.jpg'
-    import HuldaImg1 from '../assets/images/Hulda_01.jpg'
-    import HuldaImg2 from '../assets/images/Hulda_02.jpg'
-    import HuldaImg3 from '../assets/images/Hulda_03.jpg'
-    import HuldaImg4 from '../assets/images/Hulda_04.jpg'
-    import HuldaImg5 from '../assets/images/Hulda_05.jpg'
-    import HuldaImg6 from '../assets/images/Hulda_06.jpg'
-    import VilmaImg1 from '../assets/images/Vilma_01.jpg'
-    import VilmaImg2 from '../assets/images/Vilma_02.jpg'
-    import VilmaImg3 from '../assets/images/Vilma_03.jpg'
-    import VilmaImg4 from '../assets/images/Vilma_04.jpg'
-    
+    import HuldaImg1 from '../assets/images/Hulda_01.jpg';
+    import HuldaImg2 from '../assets/images/Hulda_02.jpg';
+    import HuldaImg3 from '../assets/images/Hulda_03.jpg';
+    import HuldaImg4 from '../assets/images/Hulda_04.jpg';
+    import HuldaImg5 from '../assets/images/Hulda_05.jpg';
+    import HuldaImg6 from '../assets/images/Hulda_06.jpg';
+    import VilmaImg1 from '../assets/images/Vilma_01.jpg';
+    import VilmaImg2 from '../assets/images/Vilma_02.jpg';
+    import VilmaImg3 from '../assets/images/Vilma_03.jpg';
+    import VilmaImg4 from '../assets/images/Vilma_04.jpg';
+
     export default {
-        data() {
-            return {
-                hilleviImg: HilleviImg1,
-                huldaImg: HuldaImg1,
-                vilmaImg: VilmaImg2,
-                vilmaImages: [ // Array of thumbnail image URLs
-                    VilmaImg1,
-                    VilmaImg2,
-                    VilmaImg4,
-                    VilmaImg3,
-                ],
-                huldaImages: [ // Array of thumbnail image URLs
-                    HuldaImg1,
-                    HuldaImg2,
-                    HuldaImg3,
-                    HuldaImg4,
-                    HuldaImg5,
-                    HuldaImg6,
-                ],
-                hilleviImages: [ // Array of thumbnail image URLs
-                    HilleviImg1,
-                    HilleviImg2,
-                    HilleviImg3,
-                    HilleviImg4,
-                    HilleviImg5,
-                    HilleviImg6,
-                ],
-                isModalOpenVilma: false, // Controls the modal visibility
-                isModalOpenHulda: false, // Controls the modal visibility
-                isModalOpenHillevi: false, // Controls the modal visibility
-                selectedIndexVilma: 0, // Currently selected image for modal
-                selectedIndexHulda: 0, // Currently selected image for modal
-                selectedIndexHillevi: 0, // Currently selected image for modal
+        setup() {
+            const hilleviImg = HilleviImg1;
+            const huldaImg = HuldaImg1;
+            const vilmaImg = VilmaImg2;
+
+            const vilmaImages = ref([VilmaImg1, VilmaImg2, VilmaImg4, VilmaImg3]);
+            const huldaImages = ref([
+            HuldaImg1,
+            HuldaImg2,
+            HuldaImg3,
+            HuldaImg4,
+            HuldaImg5,
+            HuldaImg6,
+            ]);
+            const hilleviImages = ref([
+            HilleviImg1,
+            HilleviImg2,
+            HilleviImg3,
+            HilleviImg4,
+            HilleviImg5,
+            HilleviImg6,
+            ]);
+
+            const isModalOpen = ref(false);
+            const currentGallery = ref([]);
+            const selectedIndex = ref(0);
+
+            const selectedImage = computed(() => currentGallery.value[selectedIndex.value]);
+
+            const openModal = (gallery, index) => {
+            currentGallery.value = gallery;
+            selectedIndex.value = index;
+            isModalOpen.value = true;
             };
-        },
-        computed: {
-            selectedImageVilma() {
-                return this.vilmaImages[this.selectedIndexVilma];
-            },
-            selectedImageHulda() {
-                return this.huldaImages[this.selectedIndexHulda];
-            },
-            selectedImageHillevi() {
-                return this.hilleviImages[this.selectedIndexHillevi];
-            },
-        },
-        methods: {
-            openModalVilma(index) {
-                this.selectedIndexVilma = index;
-                this.isModalOpenVilma = true;
-            },
-            openModalHulda(index) {
-                this.selectedIndexHulda = index;
-                this.isModalOpenHulda = true;
-            },
-            openModalHillevi(index) {
-                this.selectedIndexHillevi = index;
-                this.isModalOpenHillevi = true;
-            },
-            closeModal() {
-                this.isModalOpenVilma = false;
-                this.isModalOpenHulda = false;
-                this.isModalOpenHillevi = false;
-            },
-            showPreviousImageVilma() {
-                if (this.selectedIndexVilma > 0) {
-                    this.selectedIndexVilma--;
-                } else {
-                    this.selectedIndexVilma = this.vilmaImages.length - 1; // Loop back to the last image
-                }
-                },
-                showNextImageVilma() {
-                if (this.selectedIndexVilma < this.vilmaImages.length - 1) {
-                    this.selectedIndexVilma++;
-                } else {
-                    this.selectedIndexVilma = 0; // Loop back to the first image
-                }
-            },
-            showPreviousImageHulda() {
-                if (this.selectedIndexHulda > 0) {
-                    this.selectedIndexHulda--;
-                } else {
-                    this.selectedIndexHulda = this.huldaImages.length - 1; // Loop back to the last image
-                }
-                },
-                showNextImageHulda() {
-                if (this.selectedIndexHulda < this.huldaImages.length - 1) {
-                    this.selectedIndexHulda++;
-                } else {
-                    this.selectedIndexHulda = 0; // Loop back to the first image
-                }
-            },
-            showPreviousImageHillevi() {
-                if (this.selectedIndexHillevi > 0) {
-                    this.selectedIndexHillevi--;
-                } else {
-                    this.selectedIndexHillevi = this.hilleviImages.length - 1; // Loop back to the last image
-                }
-                },
-                showNextImageHillevi() {
-                if (this.selectedIndexHillevi < this.hilleviImages.length - 1) {
-                    this.selectedIndexHillevi++;
-                } else {
-                    this.selectedIndexHillevi = 0; // Loop back to the first image
-                }
-            },
+
+            const closeModal = () => {
+            isModalOpen.value = false;
+            };
+
+            const showPreviousImage = () => {
+            selectedIndex.value =
+                selectedIndex.value > 0
+                ? selectedIndex.value - 1
+                : currentGallery.value.length - 1;
+            };
+
+            const showNextImage = () => {
+            selectedIndex.value =
+                selectedIndex.value < currentGallery.value.length - 1
+                ? selectedIndex.value + 1
+                : 0;
+            };
+
+            return {
+            hilleviImg,
+            huldaImg,
+            vilmaImg,
+            vilmaImages,
+            huldaImages,
+            hilleviImages,
+            isModalOpen,
+            selectedImage,
+            openModal,
+            closeModal,
+            showPreviousImage,
+            showNextImage,
+            };
         },
     };
 </script>
 
 <template>
-    <div>
-        <div class="content-container">
-            <h5>"Vilma" JCH KCH Fi*Humming California Girls JW</h5>
-            <p>SBI n
-                <br>
-                s. 26.2.2024
-            </p>
-            <p>Näyttelymenestys: 7xNOM, 6xBIS, 2xBIV, Junior Winner</p>
-            <a href="https://kissat.kissaliitto.fi/Pedigree?id=329981" target="_blank">Sukutaulu</a>
-            <div>
-                <img class="img-fluid scaledImg" title="Fi*Humming California Girls" :src="vilmaImg" alt="Vilma" width="1300" height="953">
-                
-                <!-- Thumbnails -->
-                <div class="thumbnail-container">
-                <img 
-                    v-for="(image, index) in vilmaImages" 
-                    :key="index" 
-                    :src="image" 
-                    alt="Thumbnail" 
-                    @click="openModalVilma(index)"
-                />
-                </div>
-            </div>
+    <!-- Vilma Section -->
+    <div class="content-container">
+      <h5>"Vilma" JCH KCH Fi*Humming California Girls JW</h5>
+      <p>SBI n<br />s. 26.2.2024</p>
+      <p>Näyttelymenestys: 7xNOM, 6xBIS, 2xBIV, Junior Winner</p>
+      <a
+        href="https://kissat.kissaliitto.fi/Pedigree?id=329981"
+        target="_blank"
+        >Sukutaulu</a
+      >
+      <div class="img-container">
+        <img
+          class="img-fluid scaledImg"
+          title="Fi*Humming California Girls"
+          :src="vilmaImg"
+          alt="Vilma"
+          width="1300"
+          height="953"
+        />
 
-            <!-- Modal -->
-            <div v-if="isModalOpenVilma" class="modal-overlay" @click="closeModal">
-                <div class="modal-content" @click.stop>
-                    <button @click="closeModal" class="close-btn">✖</button>
-                    
-                    <!-- Previous Button -->
-                    <button class="nav-btn prev" @click="showPreviousImageVilma">&#8592;</button>
-
-                    <img :src="selectedImageVilma" alt="Selected picture" />
-
-                    <!-- Next Button -->
-                    <button class="nav-btn next" @click="showNextImageVilma">&#8594;</button>
-                </div>
-            </div>
-
+        <!-- Thumbnails -->
+        <div class="thumbnail-container">
+          <img
+            v-for="(image, index) in vilmaImages"
+            :key="index"
+            :src="image"
+            alt="Thumbnail"
+            @click="openModal(vilmaImages, index)"
+          />
         </div>
+      </div>
+    </div>
 
-        <hr>
+    <hr />
 
-        <div class="content-container">
-            <h5>"Hulda" JCH KCH Unica vom Lilienweg</h5>
-            <p>SBI b 21
-                <br>
-                s. 7.8.2023
-            </p>
-            <p>Näyttelymenestys: 7xNOM, 1xBIS, 2xBIV</p>
-            <a href="https://kissat.kissaliitto.fi/Pedigree?id=323820" target="_blank">Sukutaulu</a>
-            <div>
-                <img class="img-fluid scaledImg" title="Unica vom Lilienweg" :src="huldaImg" alt="Hulda" width="700" height="1000">
+    <!-- Hulda Section -->
+    <div class="content-container">
+      <h5>"Hulda" JCH KCH Unica vom Lilienweg</h5>
+      <p>SBI b 21<br />s. 7.8.2023</p>
+      <p>Näyttelymenestys: 7xNOM, 1xBIS, 2xBIV</p>
+      <a
+        href="https://kissat.kissaliitto.fi/Pedigree?id=323820"
+        target="_blank"
+        >Sukutaulu</a>
+      <div class="img-container">
+        <img
+          class="img-fluid scaledImg"
+          title="Unica vom Lilienweg"
+          :src="huldaImg"
+          alt="Hulda"
+          width="700"
+          height="1000"
+        />
 
-                <!-- Thumbnails -->
-                <div class="thumbnail-container">
-                <img 
-                    v-for="(image, index) in huldaImages" 
-                    :key="index" 
-                    :src="image" 
-                    alt="Thumbnail" 
-                    @click="openModalHulda(index)"
-                />
-                </div>
-            </div>
-
-            <!-- Modal -->
-            <div v-if="isModalOpenHulda" class="modal-overlay" @click="closeModal">
-                <div class="modal-content" @click.stop>
-                    <button @click="closeModal" class="close-btn">✖</button>
-                    
-                    <!-- Previous Button -->
-                    <button class="nav-btn prev" @click="showPreviousImageHulda">&#8592;</button>
-
-                    <img :src="selectedImageHulda" alt="Selected picture" />
-
-                    <!-- Next Button -->
-                    <button class="nav-btn next" @click="showNextImageHulda">&#8594;</button>
-                </div>
-            </div>
+        <!-- Thumbnails -->
+        <div class="thumbnail-container">
+          <img
+            v-for="(image, index) in huldaImages"
+            :key="index"
+            :src="image"
+            alt="Thumbnail"
+            @click="openModal(huldaImages, index)"
+          />
         </div>
+      </div>
+    </div>
 
-        <hr>
+    <hr>
 
-        <div class="content-container">
-            <h5>"Hillevi" CH Demi Johnnatarie -E</h5>
-            <p>SBI b
-                <br>
-                s. 1.3.2022
-            </p>
-            <p>Yhteisomistuksessa LeeviL-kissalan kanssa</p>
-            <p>Näyttelymenestys: 5xBIV, 7xNOM, 3xBIS, International Champion</p>
-            <a href="https://kissat.kissaliitto.fi/Pedigree?id=296517" target="_blank">Sukutaulu</a>
-            <div>
-                <img class="img-fluid scaledImg" title="Demi Johnnatarie -E" :src="hilleviImg" alt="Hillevi" width="1300" height="953">
-
-                <!-- Thumbnails -->
-                <div class="thumbnail-container">
-                <img 
-                    v-for="(image, index) in hilleviImages" 
-                    :key="index" 
-                    :src="image" 
-                    alt="Thumbnail" 
-                    @click="openModalHillevi(index)"
+    <!-- Hillevi Section -->
+    <div class="content-container">
+        <h5>"Hillevi" CH Demi Johnnatarie -E</h5>
+        <p>SBI b
+            <br>
+            s. 1.3.2022
+        </p>
+        <p>Yhteisomistuksessa LeeviL-kissalan kanssa</p>
+        <p>Näyttelymenestys: 5xBIV, 7xNOM, 3xBIS, International Champion</p>
+        <a
+            href="https://kissat.kissaliitto.fi/Pedigree?id=296517"
+            target="_blank"
+            >Sukutaulu</a>
+        <div class="img-container">
+            <img
+                class="img-fluid scaledImg"
+                title="Demi Johnnatarie -E"
+                :src="hilleviImg"
+                alt="Hillevi"
+                width="1300"
+                height="953"
                 />
-                </div>
-            </div>
 
-            <!-- Modal -->
-            <div v-if="isModalOpenHillevi" class="modal-overlay" @click="closeModal">
-                <div class="modal-content" @click.stop>
-                    <button @click="closeModal" class="close-btn">✖</button>
-                    
-                    <!-- Previous Button -->
-                    <button class="nav-btn prev" @click="showPreviousImageHillevi">&#8592;</button>
-
-                    <img :src="selectedImageHillevi" alt="Selected picture" />
-
-                    <!-- Next Button -->
-                    <button class="nav-btn next" @click="showNextImageHillevi">&#8594;</button>
-                </div>
+            <!-- Thumbnails -->
+            <div class="thumbnail-container">
+            <img 
+                v-for="(image, index) in hilleviImages" 
+                :key="index" 
+                :src="image" 
+                alt="Thumbnail" 
+                @click="openModal(hilleviImages, index)"
+            />
             </div>
         </div>
-  </div>
+    </div>
+
+    <!-- Modal -->
+    <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
+        <div class="modal-content" @click.stop>
+            <button @click="closeModal" class="close-btn">✖</button>
+            <button class="nav-btn prev" @click="showPreviousImage">&#8592;</button>
+            <img :src="selectedImage" alt="Selected picture" />
+            <button class="nav-btn next" @click="showNextImage">&#8594;</button>
+        </div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -267,6 +219,11 @@
         justify-content: space-evenly;
         align-items: flex-start;
         padding: 2rem;
+    }
+
+    .img-container {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .scaledImg {
