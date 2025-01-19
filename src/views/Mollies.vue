@@ -99,6 +99,21 @@
         <hr>
 
         <div class="content-container">
+            <h5>"Hulda" JCH KCH Unica vom Lilienweg</h5>
+            <p>SBI b 21
+                <br>
+                s. 7.8.2023
+            </p>
+            <p>Näyttelymenestys: 7xNOM, 1xBIS, 2xBIV</p>
+            <a href="https://kissat.kissaliitto.fi/Pedigree?id=323820" target="_blank">Sukutaulu</a>
+            <div>
+                <img class="img-fluid scaledImg" title="Unica vom Lilienweg" :src="huldaImg" alt="Hulda" width="700" height="1000">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="content-container">
             <h5>"Hillevi" CH Demi Johnnatarie -E</h5>
             <p>SBI b
                 <br>
@@ -109,21 +124,6 @@
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=296517" target="_blank">Sukutaulu</a>
             <div>
                 <img class="img-fluid scaledImg" title="Demi Johnnatarie -E" :src="hilleviImg" alt="Hillevi" width="1300" height="953">
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="content-container">
-            <h5>"Hulda" JCH KCH Unica vom Lilienweg</h5>
-            <p>SBI b 21
-                <br>
-                s. 7.8.2023
-            </p>
-            <p>Näyttelymenestys: 7xNOM, 1xBIS, 2xBIV</p>
-            <a href="https://kissat.kissaliitto.fi/Pedigree?id=323820" target="_blank">Sukutaulu</a>
-            <div>
-                <img class="img-fluid scaledImg" title="Unica vom Lilienweg" :src="huldaImg" alt="Hulda" width="700" height="1000">
             </div>
         </div>
   </div>
