@@ -41,7 +41,7 @@
                     </section>
                 </div>
                 <div>
-                    <p>Päivitetty 18.01.2025</p>
+                    <p>Päivitetty 19.01.2025</p>
                 </div>
             </footer>
         </div>
