@@ -1,8 +1,13 @@
 <script>
     import HilleviImg from '../assets/images/Hillevi_01.jpg'
-    import HuldaImg from '../assets/images/Hulda_01.jpg'
-    import VilmaImg from '../assets/images/Vilma_02.jpg'
+    import HuldaImg1 from '../assets/images/Hulda_01.jpg'
+    import HuldaImg2 from '../assets/images/Hulda_02.jpg'
+    import HuldaImg3 from '../assets/images/Hulda_03.jpg'
+    import HuldaImg4 from '../assets/images/Hulda_04.jpg'
+    import HuldaImg5 from '../assets/images/Hulda_05.jpg'
+    import HuldaImg6 from '../assets/images/Hulda_06.jpg'
     import VilmaImg1 from '../assets/images/Vilma_01.jpg'
+    import VilmaImg2 from '../assets/images/Vilma_02.jpg'
     import VilmaImg3 from '../assets/images/Vilma_03.jpg'
     import VilmaImg4 from '../assets/images/Vilma_04.jpg'
     
@@ -10,44 +15,78 @@
         data() {
             return {
                 hilleviImg: HilleviImg,
-                huldaImg: HuldaImg,
-                vilmaImg: VilmaImg,
+                huldaImg: HuldaImg1,
+                vilmaImg: VilmaImg2,
 
                 vilmaImages: [ // Array of thumbnail image URLs
                     VilmaImg1,
-                    VilmaImg,
+                    VilmaImg2,
                     VilmaImg4,
                     VilmaImg3,
                 ],
-                isModalOpen: false, // Controls the modal visibility
-                selectedIndex: 0, // Currently selected image for modal
+
+                huldaImages: [ // Array of thumbnail image URLs
+                    HuldaImg1,
+                    HuldaImg2,
+                    HuldaImg3,
+                    HuldaImg4,
+                    HuldaImg5,
+                    HuldaImg6,
+                ],
+
+                isModalOpenVilma: false, // Controls the modal visibility
+                isModalOpenHulda: false, // Controls the modal visibility
+                selectedIndexVilma: 0, // Currently selected image for modal
+                selectedIndexHulda: 0, // Currently selected image for modal
             };
         },
         computed: {
-            selectedImage() {
-                return this.vilmaImages[this.selectedIndex];
+            selectedImageVilma() {
+                return this.vilmaImages[this.selectedIndexVilma];
             },
+            selectedImageHulda() {
+                return this.huldaImages[this.selectedIndexHulda];
+            }
         },
         methods: {
-            openModal(index) {
-                this.selectedIndex = index;
-                this.isModalOpen = true;
+            openModalVilma(index) {
+                this.selectedIndexVilma = index;
+                this.isModalOpenVilma = true;
+            },
+            openModalHulda(index) {
+                this.selectedIndexHulda = index;
+                this.isModalOpenHulda = true;
             },
             closeModal() {
-                this.isModalOpen = false;
+                this.isModalOpenVilma = false;
+                this.isModalOpenHulda = false;
             },
-            showPreviousImage() {
-                if (this.selectedIndex > 0) {
-                    this.selectedIndex--;
+            showPreviousImageVilma() {
+                if (this.selectedIndexVilma > 0) {
+                    this.selectedIndexVilma--;
                 } else {
-                    this.selectedIndex = this.vilmaImages.length - 1; // Loop back to the last image
+                    this.selectedIndexVilma = this.vilmaImages.length - 1; // Loop back to the last image
                 }
                 },
-                showNextImage() {
-                if (this.selectedIndex < this.vilmaImages.length - 1) {
-                    this.selectedIndex++;
+                showNextImageVilma() {
+                if (this.selectedIndexVilma < this.vilmaImages.length - 1) {
+                    this.selectedIndexVilma++;
                 } else {
-                    this.selectedIndex = 0; // Loop back to the first image
+                    this.selectedIndexVilma = 0; // Loop back to the first image
+                }
+            },
+            showPreviousImageHulda() {
+                if (this.selectedIndexHulda > 0) {
+                    this.selectedIndexHulda--;
+                } else {
+                    this.selectedIndexHulda = this.huldaImages.length - 1; // Loop back to the last image
+                }
+                },
+                showNextImageHulda() {
+                if (this.selectedIndexHulda < this.huldaImages.length - 1) {
+                    this.selectedIndexHulda++;
+                } else {
+                    this.selectedIndexHulda = 0; // Loop back to the first image
                 }
             }
         },
@@ -74,23 +113,23 @@
                     :key="index" 
                     :src="image" 
                     alt="Thumbnail" 
-                    @click="openModal(index)"
+                    @click="openModalVilma(index)"
                 />
                 </div>
             </div>
 
             <!-- Modal -->
-            <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
+            <div v-if="isModalOpenVilma" class="modal-overlay" @click="closeModal">
                 <div class="modal-content" @click.stop>
                     <button @click="closeModal" class="close-btn">✖</button>
                     
                     <!-- Previous Button -->
-                    <button class="nav-btn prev" @click="showPreviousImage">&#8592;</button>
+                    <button class="nav-btn prev" @click="showPreviousImageVilma">&#8592;</button>
 
-                    <img :src="selectedImage" alt="Selected picture" />
+                    <img :src="selectedImageVilma" alt="Selected picture" />
 
                     <!-- Next Button -->
-                    <button class="nav-btn next" @click="showNextImage">&#8594;</button>
+                    <button class="nav-btn next" @click="showNextImageVilma">&#8594;</button>
                 </div>
             </div>
 
@@ -108,6 +147,32 @@
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=323820" target="_blank">Sukutaulu</a>
             <div>
                 <img class="img-fluid scaledImg" title="Unica vom Lilienweg" :src="huldaImg" alt="Hulda" width="700" height="1000">
+
+                <!-- Thumbnails -->
+                <div class="thumbnail-container">
+                <img 
+                    v-for="(image, index) in huldaImages" 
+                    :key="index" 
+                    :src="image" 
+                    alt="Thumbnail" 
+                    @click="openModalHulda(index)"
+                />
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div v-if="isModalOpenHulda" class="modal-overlay" @click="closeModal">
+                <div class="modal-content" @click.stop>
+                    <button @click="closeModal" class="close-btn">✖</button>
+                    
+                    <!-- Previous Button -->
+                    <button class="nav-btn prev" @click="showPreviousImageHulda">&#8592;</button>
+
+                    <img :src="selectedImageHulda" alt="Selected picture" />
+
+                    <!-- Next Button -->
+                    <button class="nav-btn next" @click="showNextImageHulda">&#8594;</button>
+                </div>
             </div>
         </div>
 
@@ -241,7 +306,7 @@
         position: absolute;
         top: 10px;
         right: 5px;
-        background: transparent;
+        background: #e2e2e2;
         border: none;
         font-size: 2rem;
         font-weight: bold;
@@ -249,6 +314,7 @@
         cursor: pointer;
         outline: none;
         transition: color 0.2s ease;
+        border-radius: 5px;
     }
 
     .close-btn:hover {
