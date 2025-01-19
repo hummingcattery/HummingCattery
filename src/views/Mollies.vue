@@ -1,5 +1,10 @@
 <script>
-    import HilleviImg from '../assets/images/Hillevi_01.jpg'
+    import HilleviImg1 from '../assets/images/Hillevi_01.jpg'
+    import HilleviImg2 from '../assets/images/Hillevi_02.jpg'
+    import HilleviImg3 from '../assets/images/Hillevi_03.jpg'
+    import HilleviImg4 from '../assets/images/Hillevi_04.jpg'
+    import HilleviImg5 from '../assets/images/Hillevi_05.jpg'
+    import HilleviImg6 from '../assets/images/Hillevi_06.jpg'
     import HuldaImg1 from '../assets/images/Hulda_01.jpg'
     import HuldaImg2 from '../assets/images/Hulda_02.jpg'
     import HuldaImg3 from '../assets/images/Hulda_03.jpg'
@@ -14,17 +19,15 @@
     export default {
         data() {
             return {
-                hilleviImg: HilleviImg,
+                hilleviImg: HilleviImg1,
                 huldaImg: HuldaImg1,
                 vilmaImg: VilmaImg2,
-
                 vilmaImages: [ // Array of thumbnail image URLs
                     VilmaImg1,
                     VilmaImg2,
                     VilmaImg4,
                     VilmaImg3,
                 ],
-
                 huldaImages: [ // Array of thumbnail image URLs
                     HuldaImg1,
                     HuldaImg2,
@@ -33,11 +36,20 @@
                     HuldaImg5,
                     HuldaImg6,
                 ],
-
+                hilleviImages: [ // Array of thumbnail image URLs
+                    HilleviImg1,
+                    HilleviImg2,
+                    HilleviImg3,
+                    HilleviImg4,
+                    HilleviImg5,
+                    HilleviImg6,
+                ],
                 isModalOpenVilma: false, // Controls the modal visibility
                 isModalOpenHulda: false, // Controls the modal visibility
+                isModalOpenHillevi: false, // Controls the modal visibility
                 selectedIndexVilma: 0, // Currently selected image for modal
                 selectedIndexHulda: 0, // Currently selected image for modal
+                selectedIndexHillevi: 0, // Currently selected image for modal
             };
         },
         computed: {
@@ -46,7 +58,10 @@
             },
             selectedImageHulda() {
                 return this.huldaImages[this.selectedIndexHulda];
-            }
+            },
+            selectedImageHillevi() {
+                return this.hilleviImages[this.selectedIndexHillevi];
+            },
         },
         methods: {
             openModalVilma(index) {
@@ -57,9 +72,14 @@
                 this.selectedIndexHulda = index;
                 this.isModalOpenHulda = true;
             },
+            openModalHillevi(index) {
+                this.selectedIndexHillevi = index;
+                this.isModalOpenHillevi = true;
+            },
             closeModal() {
                 this.isModalOpenVilma = false;
                 this.isModalOpenHulda = false;
+                this.isModalOpenHillevi = false;
             },
             showPreviousImageVilma() {
                 if (this.selectedIndexVilma > 0) {
@@ -88,7 +108,21 @@
                 } else {
                     this.selectedIndexHulda = 0; // Loop back to the first image
                 }
-            }
+            },
+            showPreviousImageHillevi() {
+                if (this.selectedIndexHillevi > 0) {
+                    this.selectedIndexHillevi--;
+                } else {
+                    this.selectedIndexHillevi = this.hilleviImages.length - 1; // Loop back to the last image
+                }
+                },
+                showNextImageHillevi() {
+                if (this.selectedIndexHillevi < this.hilleviImages.length - 1) {
+                    this.selectedIndexHillevi++;
+                } else {
+                    this.selectedIndexHillevi = 0; // Loop back to the first image
+                }
+            },
         },
     };
 </script>
@@ -189,6 +223,32 @@
             <a href="https://kissat.kissaliitto.fi/Pedigree?id=296517" target="_blank">Sukutaulu</a>
             <div>
                 <img class="img-fluid scaledImg" title="Demi Johnnatarie -E" :src="hilleviImg" alt="Hillevi" width="1300" height="953">
+
+                <!-- Thumbnails -->
+                <div class="thumbnail-container">
+                <img 
+                    v-for="(image, index) in hilleviImages" 
+                    :key="index" 
+                    :src="image" 
+                    alt="Thumbnail" 
+                    @click="openModalHillevi(index)"
+                />
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div v-if="isModalOpenHillevi" class="modal-overlay" @click="closeModal">
+                <div class="modal-content" @click.stop>
+                    <button @click="closeModal" class="close-btn">✖</button>
+                    
+                    <!-- Previous Button -->
+                    <button class="nav-btn prev" @click="showPreviousImageHillevi">&#8592;</button>
+
+                    <img :src="selectedImageHillevi" alt="Selected picture" />
+
+                    <!-- Next Button -->
+                    <button class="nav-btn next" @click="showNextImageHillevi">&#8594;</button>
+                </div>
             </div>
         </div>
   </div>
