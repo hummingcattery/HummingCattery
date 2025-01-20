@@ -2,11 +2,13 @@
     import BannerImg from '../assets/images/Banner.jpg'
     
     export default {
-        data() {
+        setup() {
+            const bannerImage = BannerImg;
+
             return {
-                bannerImage: BannerImg
+                bannerImage,
             };
-        }
+        },
     };
 </script>
 
@@ -30,12 +32,12 @@
 
     .banner {
         display: flex;
-        justify-content: center; /* Centers content horizontally */
-        align-items: center; /* Centers content vertically */
+        justify-content: center;
+        align-items: center;
     }
 
     .banner-image {
-        max-width: 100%; /* Ensures the image does not exceed its container's width */
-        height: auto; /* Maintains aspect ratio */
+        max-width: 100%;
+        height: auto;
     }
 </style>
