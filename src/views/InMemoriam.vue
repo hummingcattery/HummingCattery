@@ -2,11 +2,13 @@
     import HarppuImg from '../assets/images/Harppu_01.jpg'
     
     export default {
-        data() {
+        setup() {
+            const harppuImg = HarppuImg;
+
             return {
-                harppuImg: HarppuImg
+                harppuImg,
             };
-        }
+        },
     };
 </script>
 
@@ -35,16 +37,6 @@
 </template>
 
 <style lang="scss" scoped>
-    .content-container {
-        background-color: #F8F3FC;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        padding: 2rem;
-    }
-
     h5 {
         font-weight: bold;
     }
@@ -55,5 +47,15 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .content-container {
+        background-color: #F8F3FC;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 2rem;
     }
 </style>
