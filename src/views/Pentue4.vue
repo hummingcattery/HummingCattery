@@ -2,10 +2,12 @@
     import Pentue4Img from '../assets/images/pentue_04.jpg'
     
     export default {
-        data() {
-            return {
-                pentue4Img: Pentue4Img
-            };
+        setup() {
+          const pentue4Img = Pentue4Img;
+          
+          return {
+            pentue4Img,
+          };
         }
     };
 </script>
@@ -67,6 +69,14 @@
 </template>
 
 <style lang="scss" scoped>
+    img {
+        object-fit: contain;
+        transform: scale(0.75);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .content-container {
         background-color: #F8F3FC;
         padding: 2rem;
@@ -74,14 +84,6 @@
 
     .custom-table tbody tr {
         --bs-table-bg: #F8F3FC !important;
-    }
-
-    img {
-        object-fit: contain;
-        transform: scale(0.75);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .col {
