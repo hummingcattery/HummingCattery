@@ -11,7 +11,7 @@
                 halkaImg,
                 heklaImg,
             };
-        }
+        },
     };
 </script>
 

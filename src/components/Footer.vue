@@ -10,8 +10,8 @@
             return {
                 facebookIcon,
                 instagramIcon,
-            }
-        }
+            };
+        },
     };
 </script>
 
