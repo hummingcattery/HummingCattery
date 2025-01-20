@@ -2,9 +2,11 @@
     import BreederImg from '../assets/images/Breeder.jpg'
     
     export default {
-        data() {
+        setup() {
+            const breederImg = BreederImg;
+
             return {
-                breederImg: BreederImg
+                breederImg,
             };
         }
     };
@@ -45,17 +47,17 @@
 </template>
 
 <style lang="scss" scoped>
-    .content-container {
-        background-color: #F8F3FC;
-        padding: 2rem;
-    }
-
     img {
         object-fit: contain;
         transform: scale(0.75);
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .content-container {
+        background-color: #F8F3FC;
+        padding: 2rem;
     }
 
     .image-container {
