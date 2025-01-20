@@ -72,18 +72,18 @@
             };
 
             return {
-            hilleviImg,
-            huldaImg,
-            vilmaImg,
-            vilmaImages,
-            huldaImages,
-            hilleviImages,
-            isModalOpen,
-            selectedImage,
-            openModal,
-            closeModal,
-            showPreviousImage,
-            showNextImage,
+                hilleviImg,
+                huldaImg,
+                vilmaImg,
+                vilmaImages,
+                huldaImages,
+                hilleviImages,
+                isModalOpen,
+                selectedImage,
+                openModal,
+                closeModal,
+                showPreviousImage,
+                showNextImage,
             };
         },
     };
