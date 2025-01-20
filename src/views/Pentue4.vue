@@ -8,7 +8,7 @@
           return {
             pentue4Img,
           };
-        }
+        },
     };
 </script>
 
