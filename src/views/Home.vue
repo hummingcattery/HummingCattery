@@ -3,12 +3,15 @@
     import VilmaImage03 from '../assets/images/Vilma_03.jpg'
     
     export default {
-        data() {
+        setup() {
+            const etusivuImage = EtusivuImage;
+            const vilmaImage03 = VilmaImage03;
+
             return {
-                etusivuImage: EtusivuImage,
-                vilmaImage03: VilmaImage03
+                etusivuImage,
+                vilmaImage03,
             };
-        }
+        },
     };
 </script>
 
@@ -32,11 +35,6 @@
 </template>
 
 <style lang="scss" scoped>
-    .content-container {
-        background-color: #F8F3FC;
-        padding: 2rem;
-    }
-
     img {
         object-fit: contain;
         transform: scale(0.75);
@@ -59,5 +57,10 @@
         background: none;
         border: 0;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    }
+
+    .content-container {
+        background-color: #F8F3FC;
+        padding: 2rem;
     }
 </style>
