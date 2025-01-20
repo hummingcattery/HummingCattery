@@ -2,11 +2,13 @@
     import Pentue6Img from '../assets/images/Pentukori_04.jpg'
     
     export default {
-        data() {
+        setup() {
+            const pentue6Img = Pentue6Img;
+
             return {
-                pentue6Img: Pentue6Img
+                pentue6Img,
             };
-        }
+        },
     };
 </script>
 
