@@ -1,14 +1,11 @@
 <script>
-    import HalkaImg from '../assets/images/Halka_01.jpg'
     import HeklaImg from '../assets/images/Hekla_01.jpeg'
     
     export default {
         data() {
-            const halkaImg = HalkaImg;
             const heklaImg = HeklaImg;
             
             return {
-                halkaImg,
                 heklaImg,
             };
         },
@@ -17,28 +14,6 @@
 
 <template>
     <div>
-        <div class="content-container">
-            <h5>"Halka" SP, SC Recknagel Tairapänks, DVM, DSM</h5>
-            <p>SBI a
-                <br>
-                s. 21.6.2009
-            </p>
-            <p>
-                isä: IC FI*Zhamanen Fangio, JW (SBI n)
-                <br>
-                emo: FI*Recknagel Fridakahlo (SBI b)
-            </p>
-            <p>Näyttelymenestys:
-                <span>Multi BIS (& BIV & NOM) Winner</span>,
-                <span>Vuoden kissa 2014</span>
-            </p>
-            <div col-3>
-                <img class="img-fluid" title="SC FI*Recknagel Tairapänks" :src="halkaImg" alt="Halka" width="900" height="600">
-            </div>
-        </div>
-
-        <hr>
-
         <div class="content-container">
             <p>
                 <h5>"Hekla" FI*Humming Birdy</h5>
