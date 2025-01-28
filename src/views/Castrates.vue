@@ -1,20 +1,22 @@
-<script>
+<script setup>
     import HeklaImg from '../assets/images/Hekla_01.jpeg'
+    import Card from '../components/Card.vue'
     
-    export default {
-        data() {
-            const heklaImg = HeklaImg;
-            
-            return {
-                heklaImg,
-            };
-        },
-    };
+    const heklaImg = HeklaImg;
 </script>
 
 <template>
     <div>
-        <div class="content-container">
+        <Card
+            :name='`"Hekla" FI*Humming Birdy`'
+            :variety="'SBI c'"
+            :lifeDates="'10.5.2013'"
+            :tom="'CH*Tamus Thunderbird'"
+            :queen="'Recknagel Tairapänks'"
+            :exhibitionSuccessResults="['Useampi BIV & NOM pentuluokissa. Hekla ei ole näyttelytasoinen, joten aikuisena ei ole käyty näyttelyissä. :)']"
+            :image="heklaImg"
+        />
+        <!-- <div class="content-container">
             <p>
                 <h5>"Hekla" FI*Humming Birdy</h5>
                 <p>SBI c
@@ -33,7 +35,7 @@
                     <img class="img-fluid" title="Hekla" :src="heklaImg" alt="Hekla" width="1200" height="1600">
                 </div>
             </p>
-        </div>
+        </div> -->
   </div>
 </template>
 
