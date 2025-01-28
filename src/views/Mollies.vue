@@ -1,4 +1,4 @@
-<script>
+<script setup>
     import { ref, computed } from 'vue';
     import HilleviImg1 from '../assets/images/Hillevi_01.jpg'
     import HilleviImg2 from '../assets/images/Hillevi_02.jpg'
@@ -16,76 +16,58 @@
     import VilmaImg2 from '../assets/images/Vilma_02.jpg';
     import VilmaImg3 from '../assets/images/Vilma_03.jpg';
     import VilmaImg4 from '../assets/images/Vilma_04.jpg';
+    import Thumbnails from '../components/Thumbnails.vue';
 
-    export default {
-        setup() {
-            const hilleviImg = HilleviImg1;
-            const huldaImg = HuldaImg1;
-            const vilmaImg = VilmaImg2;
+    const hilleviImg = HilleviImg1;
+    const huldaImg = HuldaImg1;
+    const vilmaImg = VilmaImg2;
 
-            const vilmaImages = ref([VilmaImg1, VilmaImg2, VilmaImg4, VilmaImg3]);
-            const huldaImages = ref([
-            HuldaImg1,
-            HuldaImg2,
-            HuldaImg3,
-            HuldaImg4,
-            HuldaImg5,
-            HuldaImg6,
-            ]);
-            const hilleviImages = ref([
-            HilleviImg1,
-            HilleviImg2,
-            HilleviImg3,
-            HilleviImg4,
-            HilleviImg5,
-            HilleviImg6,
-            ]);
+    const vilmaImages = [VilmaImg1, VilmaImg2, VilmaImg4, VilmaImg3];
+    const huldaImages = [
+        HuldaImg1,
+        HuldaImg2,
+        HuldaImg3,
+        HuldaImg4,
+        HuldaImg5,
+        HuldaImg6,
+    ];
+    const hilleviImages = [
+        HilleviImg1,
+        HilleviImg2,
+        HilleviImg3,
+        HilleviImg4,
+        HilleviImg5,
+        HilleviImg6,
+    ];
 
-            const isModalOpen = ref(false);
-            const currentGallery = ref([]);
-            const selectedIndex = ref(0);
+    const isModalOpen = ref(false);
+    const currentGallery = ref([]);
+    const selectedIndex = ref(0);
 
-            const selectedImage = computed(() => currentGallery.value[selectedIndex.value]);
+    const selectedImage = computed(() => currentGallery.value[selectedIndex.value]);
 
-            const openModal = (gallery, index) => {
-            currentGallery.value = gallery;
-            selectedIndex.value = index;
-            isModalOpen.value = true;
-            };
+    const openModal = (gallery, index) => {
+        currentGallery.value = gallery;
+        selectedIndex.value = index;
+        isModalOpen.value = true;
+    };
 
-            const closeModal = () => {
-            isModalOpen.value = false;
-            };
+    const closeModal = () => {
+        isModalOpen.value = false;
+    };
 
-            const showPreviousImage = () => {
-            selectedIndex.value =
-                selectedIndex.value > 0
-                ? selectedIndex.value - 1
-                : currentGallery.value.length - 1;
-            };
+    const showPreviousImage = () => {
+        selectedIndex.value =
+            selectedIndex.value > 0
+            ? selectedIndex.value - 1
+            : currentGallery.value.length - 1;
+    };
 
-            const showNextImage = () => {
-            selectedIndex.value =
-                selectedIndex.value < currentGallery.value.length - 1
-                ? selectedIndex.value + 1
-                : 0;
-            };
-
-            return {
-                hilleviImg,
-                huldaImg,
-                vilmaImg,
-                vilmaImages,
-                huldaImages,
-                hilleviImages,
-                isModalOpen,
-                selectedImage,
-                openModal,
-                closeModal,
-                showPreviousImage,
-                showNextImage,
-            };
-        },
+    const showNextImage = () => {
+        selectedIndex.value =
+            selectedIndex.value < currentGallery.value.length - 1
+            ? selectedIndex.value + 1
+            : 0;
     };
 </script>
 
@@ -111,15 +93,7 @@
         />
 
         <!-- Thumbnails -->
-        <div class="thumbnail-container">
-          <img
-            v-for="(image, index) in vilmaImages"
-            :key="index"
-            :src="image"
-            alt="Thumbnail"
-            @click="openModal(vilmaImages, index)"
-          />
-        </div>
+        <Thumbnails :gallery="vilmaImages" :modalOpening="openModal" />
       </div>
     </div>
 
@@ -145,15 +119,7 @@
         />
 
         <!-- Thumbnails -->
-        <div class="thumbnail-container">
-          <img
-            v-for="(image, index) in huldaImages"
-            :key="index"
-            :src="image"
-            alt="Thumbnail"
-            @click="openModal(huldaImages, index)"
-          />
-        </div>
+        <Thumbnails :gallery="huldaImages" :modalOpening="openModal" />
       </div>
     </div>
 
@@ -183,15 +149,7 @@
                 />
 
             <!-- Thumbnails -->
-            <div class="thumbnail-container">
-            <img 
-                v-for="(image, index) in hilleviImages" 
-                :key="index" 
-                :src="image" 
-                alt="Thumbnail" 
-                @click="openModal(hilleviImages, index)"
-            />
-            </div>
+            <Thumbnails :gallery="hilleviImages" :modalOpening="openModal" />
         </div>
     </div>
 
@@ -243,27 +201,6 @@
         max-width: 600px;
         height: auto;
         margin-bottom: 20px;
-    }
-
-    .thumbnail-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .thumbnail-container img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .thumbnail-container img:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     .modal-overlay {
