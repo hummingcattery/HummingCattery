@@ -15,7 +15,7 @@
             :lifeDates="'21.6.2009 - 23.1.2025'"
             :tom="'IC FI*Zhamanen Fangio, JW (SBI n)'"
             :queen="'FI*Recknagel Fridakahlo (SBI b)'"
-            :exhibitionSuccessResults="['Multi BIS (& BIV & NOM) Winner', 'Vuoden kissa 2014']"
+            :exhibitionSuccessResults="'Multi BIS (& BIV & NOM) Winner Vuoden kissa 2014'"
             :image="halkaImg"
         />
 
@@ -27,7 +27,7 @@
             :lifeDates="'28.7.2008 - 12.12.2023'"
             :tom="'EC FI*JoJon El Rayo Rumba (SBI n 21)'"
             :queen="'IC FI*Zhamanen Ferrarina N.F.S. (SBI h)'"
-            :exhibitionSuccessResults="['Multi BIS, BIV, NOM -winner']"
+            :exhibitionSuccessResults="'Multi BIS, BIV, NOM -winner'"
             :image="harppuImg"
         />
   </div>

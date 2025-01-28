@@ -7,11 +7,11 @@
         variety: string;
         lifeDates: string;
         comments?: string; // Optional prop
-        exhibitionSuccessResults: string[]; // Specify array type
+        exhibitionSuccessResults: string;
         pedigreeAddress: string;
         image: string;
-        gallery: string[]; // Specify array type
-        modalOpening: () => void; // Function type
+        gallery: string[];
+        modalOpening: () => void;
     }>();
 </script>
 
@@ -20,7 +20,7 @@
         <h5>{{props.name}}</h5>
         <p>{{props.variety}}<br />s. {{props.lifeDates}}</p>
         <p v-if="props.comments">{{props.comments}}</p>
-        <p>Näyttelymenestys: {{props.exhibitionSuccessResults[0]}}</p>
+        <p>Näyttelymenestys: {{props.exhibitionSuccessResults}}</p>
         <a
             :href="props.pedigreeAddress"
             target="_blank"

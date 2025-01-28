@@ -77,7 +77,7 @@
         :name='`"Vilma" JCH KCH Fi*Humming California Girls JW`'
         :variety="'SBI n'"
         :lifeDates="'26.2.2024'"
-        :exhibitionSuccessResults="['7xNOM, 6xBIS, 2xBIV, Junior Winner']"
+        :exhibitionSuccessResults="'7xNOM, 6xBIS, 2xBIV, Junior Winner'"
         :pedigreeAddress="'https://kissat.kissaliitto.fi/Pedigree?id=329981'"
         :image="vilmaImg"
         :gallery="vilmaImages"
@@ -91,7 +91,7 @@
         :name='`"Hulda" JCH KCH Unica vom Lilienweg`'
         :variety="'SBI b 21'"
         :lifeDates="'7.8.2023'"
-        :exhibitionSuccessResults="['7xNOM, 1xBIS, 2xBIV']"
+        :exhibitionSuccessResults="'7xNOM, 1xBIS, 2xBIV'"
         :pedigreeAddress="'https://kissat.kissaliitto.fi/Pedigree?id=323820'"
         :image="huldaImg"
         :gallery="huldaImages"
@@ -106,7 +106,7 @@
         :variety="'SBI b'"
         :lifeDates="'1.3.2022'"
         :comments="'Yhteisomistuksessa LeeviL-kissalan kanssa'"
-        :exhibitionSuccessResults="['5xBIV, 7xNOM, 3xBIS, International Champion']"
+        :exhibitionSuccessResults="'5xBIV, 7xNOM, 3xBIS, International Champion'"
         :pedigreeAddress="'https://kissat.kissaliitto.fi/Pedigree?id=296517'"
         :image="hilleviImg"
         :gallery="hilleviImages"

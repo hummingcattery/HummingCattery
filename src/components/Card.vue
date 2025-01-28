@@ -7,7 +7,7 @@
         lifeDates: String,
         tom: String,
         queen: String,
-        exhibitionSuccessResults: Array,
+        exhibitionSuccessResults: String,
         image: String
     });
 </script>
@@ -24,10 +24,7 @@
             <br>
             emo: {{props.queen}}
             </p>
-        <p>Näyttelymenestys:
-            <span>{{props.exhibitionSuccessResults[0]}}</span>,
-            <span>{{props.exhibitionSuccessResults[1]}}</span>
-        </p>
+        <p>Näyttelymenestys: {{props.exhibitionSuccessResults}}</p>
         <div col-3>
             <img class="img-fluid" :title="props.name" :src="props.image" :alt="props.name" width="900" height="600">
         </div>
