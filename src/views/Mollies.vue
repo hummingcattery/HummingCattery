@@ -16,7 +16,7 @@
     import VilmaImg2 from '../assets/images/Vilma_02.jpg';
     import VilmaImg3 from '../assets/images/Vilma_03.jpg';
     import VilmaImg4 from '../assets/images/Vilma_04.jpg';
-    import Thumbnails from '../components/Thumbnails.vue';
+    import CardWithThumbnails from '../components/CardWithThumbnails.vue';
 
     const hilleviImg = HilleviImg1;
     const huldaImg = HuldaImg1;
@@ -73,85 +73,45 @@
 
 <template>
     <!-- Vilma Section -->
-    <div class="content-container">
-      <h5>"Vilma" JCH KCH Fi*Humming California Girls JW</h5>
-      <p>SBI n<br />s. 26.2.2024</p>
-      <p>Näyttelymenestys: 7xNOM, 6xBIS, 2xBIV, Junior Winner</p>
-      <a
-        href="https://kissat.kissaliitto.fi/Pedigree?id=329981"
-        target="_blank"
-        >Sukutaulu</a
-      >
-      <div class="img-container">
-        <img
-          class="img-fluid scaledImg"
-          title="Fi*Humming California Girls"
-          :src="vilmaImg"
-          alt="Vilma"
-          width="1300"
-          height="953"
-        />
-
-        <!-- Thumbnails -->
-        <Thumbnails :gallery="vilmaImages" :modalOpening="openModal" />
-      </div>
-    </div>
+    <CardWithThumbnails 
+        :name='`"Vilma" JCH KCH Fi*Humming California Girls JW`'
+        :variety="'SBI n'"
+        :lifeDates="'26.2.2024'"
+        :exhibitionSuccessResults="['7xNOM, 6xBIS, 2xBIV, Junior Winner']"
+        :pedigreeAddress="'https://kissat.kissaliitto.fi/Pedigree?id=329981'"
+        :image="vilmaImg"
+        :gallery="vilmaImages"
+        :modalOpening="openModal"
+    />
 
     <hr />
 
     <!-- Hulda Section -->
-    <div class="content-container">
-      <h5>"Hulda" JCH KCH Unica vom Lilienweg</h5>
-      <p>SBI b 21<br />s. 7.8.2023</p>
-      <p>Näyttelymenestys: 7xNOM, 1xBIS, 2xBIV</p>
-      <a
-        href="https://kissat.kissaliitto.fi/Pedigree?id=323820"
-        target="_blank"
-        >Sukutaulu</a>
-      <div class="img-container">
-        <img
-          class="img-fluid scaledImg"
-          title="Unica vom Lilienweg"
-          :src="huldaImg"
-          alt="Hulda"
-          width="700"
-          height="1000"
-        />
-
-        <!-- Thumbnails -->
-        <Thumbnails :gallery="huldaImages" :modalOpening="openModal" />
-      </div>
-    </div>
+    <CardWithThumbnails 
+        :name='`"Hulda" JCH KCH Unica vom Lilienweg`'
+        :variety="'SBI b 21'"
+        :lifeDates="'7.8.2023'"
+        :exhibitionSuccessResults="['7xNOM, 1xBIS, 2xBIV']"
+        :pedigreeAddress="'https://kissat.kissaliitto.fi/Pedigree?id=323820'"
+        :image="huldaImg"
+        :gallery="huldaImages"
+        :modalOpening="openModal"
+    />
 
     <hr>
 
     <!-- Hillevi Section -->
-    <div class="content-container">
-        <h5>"Hillevi" CH Demi Johnnatarie -E</h5>
-        <p>SBI b
-            <br>
-            s. 1.3.2022
-        </p>
-        <p>Yhteisomistuksessa LeeviL-kissalan kanssa</p>
-        <p>Näyttelymenestys: 5xBIV, 7xNOM, 3xBIS, International Champion</p>
-        <a
-            href="https://kissat.kissaliitto.fi/Pedigree?id=296517"
-            target="_blank"
-            >Sukutaulu</a>
-        <div class="img-container">
-            <img
-                class="img-fluid scaledImg"
-                title="Demi Johnnatarie -E"
-                :src="hilleviImg"
-                alt="Hillevi"
-                width="1300"
-                height="953"
-                />
-
-            <!-- Thumbnails -->
-            <Thumbnails :gallery="hilleviImages" :modalOpening="openModal" />
-        </div>
-    </div>
+    <CardWithThumbnails 
+        :name='`"Hillevi" CH Demi Johnnatarie -E`'
+        :variety="'SBI b'"
+        :lifeDates="'1.3.2022'"
+        :comments="'Yhteisomistuksessa LeeviL-kissalan kanssa'"
+        :exhibitionSuccessResults="['5xBIV, 7xNOM, 3xBIS, International Champion']"
+        :pedigreeAddress="'https://kissat.kissaliitto.fi/Pedigree?id=296517'"
+        :image="hilleviImg"
+        :gallery="hilleviImages"
+        :modalOpening="openModal"
+    />
 
     <!-- Modal -->
     <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
@@ -165,44 +125,6 @@
 </template>
 
 <style lang="scss" scoped>
-    h5 {
-        font-weight: bold;
-    }
-    
-    .content-container {
-        background-color: #F8F3FC;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        padding: 2rem;
-    }
-
-    .img-container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .scaledImg {
-        object-fit: contain;
-        transform: scale(0.75);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .gallery {
-        text-align: center;
-    }
-
-    .main-picture img {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
     .modal-overlay {
         position: fixed;
         top: 0;
