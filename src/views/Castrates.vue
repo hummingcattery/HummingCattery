@@ -13,7 +13,7 @@
             :lifeDates="'10.5.2013'"
             :tom="'CH*Tamus Thunderbird'"
             :queen="'Recknagel Tairapänks'"
-            :exhibitionSuccessResults="['Useampi BIV & NOM pentuluokissa. Hekla ei ole näyttelytasoinen, joten aikuisena ei ole käyty näyttelyissä. :)']"
+            :exhibitionSuccessResults="'Useampi BIV & NOM pentuluokissa. Hekla ei ole näyttelytasoinen, joten aikuisena ei ole käyty näyttelyissä. :)'"
             :image="heklaImg"
         />
   </div>
