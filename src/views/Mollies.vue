@@ -1,5 +1,4 @@
 <script setup>
-    import { ref } from 'vue';
     import HilleviImg1 from '../assets/images/Hillevi_01.jpg'
     import HilleviImg2 from '../assets/images/Hillevi_02.jpg'
     import HilleviImg3 from '../assets/images/Hillevi_03.jpg'

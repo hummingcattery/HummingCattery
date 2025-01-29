@@ -1,68 +1,27 @@
-<script>
+<script setup>
     import Pentue4Img from '../assets/images/pentue_04.jpg'
+    import KittensTable from '../components/KittensTable.vue';
     
-    export default {
-        setup() {
-          const pentue4Img = Pentue4Img;
-          
-          return {
-            pentue4Img,
-          };
-        },
-    };
+    const pentue4Img = Pentue4Img;
 </script>
 
 <template>
     <div>
-      <h1>4. pentue</h1>
+        <h1>4. pentue</h1>
     </div>
 
     <div class="content-container">
-      <h2>Humming Birdy x Mototassun Rocket III</h2>
-      <p>Synt. 20.6.2017</p>
+        <h2>Humming Birdy x Mototassun Rocket III</h2>
+        <p>Synt. 20.6.2017</p>
     </div>
     
     <h3>Pennut</h3>
     <div class="content-container">
-      <div class="container">
-        <div class="row">
-            <div class="col">
-              <table class="table table-bordered custom-table">
-                <tbody>
-                  <tr>
-                    <th>Nimi</th>
-                    <th>Väri</th>
-                    <th>Sukupuoli</th>
-                    <th>Taso</th>
-                    <th>Näyttelymenestys</th>
-                  </tr>
-
-                  <tr>
-                    <td>Humming Karma Police</td>
-                    <td>SBI a</td>
-                    <td>uros</td>
-                    <td>Lemmikki</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Humming No Surprises</td>
-                    <td>SBI n</td>
-                    <td>uros</td>
-                    <td>Lemmikki</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Humming Paranoid Android</td>
-                    <td>SBI f</td>
-                    <td>naaras</td>
-                    <td>Näyttely/siitos</td>
-                    <td>Nominated for BIS</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+        <KittensTable :cats="[
+            ['Humming Karma Police', 'SBI a', 'uros', 'Lemmikki', ''],
+            ['Humming No Surprises', 'SBI n', 'uros', 'Lemmikki', ''],
+            ['Humming Paranoid Android', 'SBI f', 'naaras', 'Näyttely/siitos', 'Nominated for BIS']
+        ]"/>
 
         <img class="img-fluid" title="4. pentue" :src="pentue4Img" alt="4. pentue" width="1600" height="1200">
     </div>
@@ -80,13 +39,5 @@
     .content-container {
         background-color: #F8F3FC;
         padding: 2rem;
-    }
-
-    .custom-table tbody tr {
-        --bs-table-bg: #F8F3FC !important;
-    }
-
-    .col {
-        overflow-x: auto;
     }
 </style>

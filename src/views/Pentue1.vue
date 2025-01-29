@@ -1,15 +1,8 @@
-<script>
+<script setup>
     import Pentue1Img from '../assets/images/pentue_01.jpg'
+    import KittensTable from '../components/KittensTable.vue';
     
-    export default {
-        setup() {
-            const pentue1Img = Pentue1Img;
-
-            return {
-                pentue1Img,
-            };
-        },
-    };
+    const pentue1Img = Pentue1Img;
 </script>
 
 <template>
@@ -24,38 +17,10 @@
     
     <h3>Pennut</h3>
     <div class="content-container">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <table class="table table-bordered custom-table">
-                        <tbody>
-                            <tr>
-                                <th>Nimi</th>
-                                <th>Väri</th>
-                                <th>Sukupuoli</th>
-                                <th>Taso</th>
-                                <th>Näyttelymenestys</th>
-                            </tr>
-
-                            <tr>
-                                <td>Humming Ummagumma</td>
-                                <td>SBI b</td>
-                                <td>uros</td>
-                                <td>Näyttelytasoinen</td>
-                                <td>Nominated for BIS</td>
-                            </tr>
-                            <tr>
-                                <td>Humming High Hopes</td>
-                                <td>SBI c</td>
-                                <td>naaras</td>
-                                <td>Siitostasoinen</td>
-                                <td>BIS-winner</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+        <KittensTable :cats="[
+            ['Humming Ummagumma', 'SBI b', 'uros', 'Näyttelytasoinen', 'Nominated for BIS'],
+            ['Humming High Hopes', 'SBI c', 'naaras', 'Siitostasoinen', 'BIS-winner']
+        ]"/>
 
         <img class="img-fluid" title="1. pentue" :src="pentue1Img" alt="1. pentue" width="903" height="570">
     </div>
@@ -73,13 +38,5 @@
     .content-container {
         background-color: #F8F3FC;
         padding: 2rem;
-    }
-
-    .custom-table tbody tr {
-        --bs-table-bg: #F8F3FC !important;
-    }
-
-    .col {
-        overflow-x: auto;
     }
 </style>

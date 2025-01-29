@@ -1,67 +1,29 @@
-<script>
+<script setup>
     import Pentue5Img from '../assets/images/pentue_05_01.jpg'
+    import KittensTable from '../components/KittensTable.vue';
     
-    export default {
-        setup() {
-          const pentue5Img = Pentue5Img;
-
-          return {
-            pentue5Img,
-          };
-        },
-    };
+    const pentue5Img = Pentue5Img;
 </script>
 
 <template>
     <div>
-      <h1>5. pentue</h1>
+        <h1>5. pentue</h1>
     </div>
 
     <div class="content-container">
-      <h2>Humming Paranoid Android x Touchant Chance au Jeu</h2>
-      <p>Synt. 4.6.2019</p>
+        <h2>Humming Paranoid Android x Touchant Chance au Jeu</h2>
+        <p>Synt. 4.6.2019</p>
     </div>
     
     <h3>Pennut</h3>
     <div class="content-container">
-      <div class="container">
-        <div class="row">
-            <div class="col">
-              <table class="table table-bordered custom-table">
-                <tbody>
-                  <tr>
-                      <th>Nimi</th>
-                      <th>Väri</th>
-                      <th>Sukupuoli</th>
-                      <th>Taso</th>
-                      <th>Näyttelymenestys</th>
-                  </tr>
-
-                  <tr>
-                    <td>Humming Musik Non Stop</td>
-                    <td>SBI c</td>
-                    <td>uros</td>
-                    <td>Lemmikki</td>
-                  </tr>
-                  <tr>
-                    <td>Humming Stoppa Mig Juni</td>
-                    <td>SBI b</td>
-                    <td>uros</td>
-                    <td>Lemmikki</td>
-                  </tr>
-                  <tr>
-                    <td>Humming Visslaren</td>
-                    <td>SBI c 21</td>
-                    <td>naaras</td>
-                    <td>Lemmikki</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+        <KittensTable :cats="[
+            ['Humming Musik Non Stop', 'SBI c', 'uros', 'Lemmikki', ''],
+            ['Humming Stoppa Mig Juni', 'SBI b', 'uros', 'Lemmikki', ''],
+            ['Humming Visslaren', 'SBI c 21', 'naaras', 'Lemmikki', '']
+        ]"/>
   
-      <img class="img-fluid" title="5. pentue" :src="pentue5Img" alt="5. pentue" width="1141" height="1600">
+        <img class="img-fluid" title="5. pentue" :src="pentue5Img" alt="5. pentue" width="1141" height="1600">
     </div>
 </template>
 
@@ -77,13 +39,5 @@
     .content-container {
         background-color: #F8F3FC;
         padding: 2rem;
-    }
-
-    .custom-table tbody tr {
-        --bs-table-bg: #F8F3FC !important;
-    }
-
-    .col {
-        overflow-x: auto;
     }
 </style>
