@@ -1,10 +1,17 @@
 <script setup>
     import { defineProps } from "vue";
+    import { useModalStore } from "../stores/useModalStore";
+    import Modal from "../components/Modal.vue";
 
+    const modalStore = useModalStore();
     const props = defineProps({
         gallery: Array,
-        modalOpening: Function
+        modalComponent: Object
     });
+
+    function handleModalOpenClick(gallery, index) {
+        modalStore.openModal(Modal, { gallery, index });
+    }
 </script>
 
 <template>
@@ -14,7 +21,7 @@
             :key="index"
             :src="image"
             alt="Thumbnail"
-            @click="props.modalOpening(props.gallery, index)"
+            @click="handleModalOpenClick(props.gallery, index)"
           />
         </div>
 </template>

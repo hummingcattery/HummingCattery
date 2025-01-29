@@ -2,6 +2,9 @@
   import Navbar from './components/Navbar.vue'
   import Footer from './components/Footer.vue'
   import Banner from './components/Banner.vue'
+  import { useModalStore } from "./stores/useModalStore"
+
+  const modalStore = useModalStore();
 </script>
 
 <template>
@@ -14,6 +17,14 @@
       <Footer></Footer>
     </div>
   </div>
+  
+  <!-- Global Modal Component -->
+  <component
+      :is="modalStore.component"
+      :isOpen="modalStore.isOpen"
+      :currentGallery="modalStore.gallery"
+      :selectedIndex="modalStore.index"
+    />
 </template>
 
 <style lang="scss" scoped>

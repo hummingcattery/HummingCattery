@@ -11,7 +11,7 @@
         pedigreeAddress: string;
         image: string;
         gallery: string[];
-        modalOpening: () => void;
+        modalComponent: Object;
     }>();
 </script>
 
@@ -35,7 +35,7 @@
                 width="1300"
                 height="953"
             />
-            <Thumbnails :gallery="props.gallery" :modalOpening="props.modalOpening" />
+            <Thumbnails :gallery="props.gallery" :modalComponent="props.modalComponent" />
         </div>
     </div>
 </template>
