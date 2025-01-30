@@ -28,7 +28,7 @@
         >
         <div class="img-container">
             <img
-                class="img-fluid scaledImg"
+                class="img-fluid"
                 :title="props.name"
                 :src="props.image"
                 alt="Vilma"
@@ -56,14 +56,6 @@
     }
 
     .img-container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .scaledImg {
-        object-fit: contain;
-        transform: scale(0.75);
-        display: block;
         margin-left: auto;
         margin-right: auto;
     }
