@@ -1,18 +1,9 @@
-<script>
+<script setup>
     import FacebookIcon from '../components/icons/Facebook_icon.svg'
     import InstagramIcon from '../components/icons/Instagram_icon.svg'
     
-    export default {
-        setup() {
-            const facebookIcon = FacebookIcon;
-            const instagramIcon = InstagramIcon;
-
-            return {
-                facebookIcon,
-                instagramIcon,
-            };
-        },
-    };
+    const facebookIcon = FacebookIcon;
+    const instagramIcon = InstagramIcon;
 </script>
 
 <template>
@@ -45,7 +36,7 @@
                     </section>
                 </div>
                 <div>
-                    <p>Päivitetty 23.1.2025</p>
+                    <p>Päivitetty 30.1.2025</p>
                 </div>
             </footer>
         </div>
