@@ -28,14 +28,6 @@
 </template>
 
 <style lang="scss" scoped>
-    img {
-        object-fit: contain;
-        transform: scale(0.75);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
     .content-container {
         background-color: #F8F3FC;
         padding: 2rem;

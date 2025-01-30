@@ -27,7 +27,7 @@
         </p>
         <img class="img-fluid" :src="etusivuImage" width="700" height="1000">
 
-        <div>
+        <div style="padding-top: 1rem;">
             <p>11.1.2025 Vilma on uusi Junior Winner!</p>
             <img class="img-fluid" :src="vilmaImage03" width="700" height="1000">
         </div>
@@ -35,14 +35,6 @@
 </template>
 
 <style lang="scss" scoped>
-    img {
-        object-fit: contain;
-        transform: scale(0.75);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     span {
         text-decoration: underline;
     }
