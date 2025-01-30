@@ -34,9 +34,9 @@
     <div v-if="modalStore.isOpen" class="modal-overlay" @click="handleModalCloseClick">
         <div class="modal-content" @click.stop>
             <button @click="handleModalCloseClick" class="close-btn">✖</button>
-            <button class="nav-btn prev" @click="handleShowPreviousImageClick">&#8592;</button>
+            <button class="nav-btn prev" @click="handleShowPreviousImageClick"><p class="arrow"><</p></button>
             <img :src="selectedImage" alt="Selected picture" />
-            <button class="nav-btn next" @click="handleShowNextImageClick">&#8594;</button>
+            <button class="nav-btn next" @click="handleShowNextImageClick"><p class="arrow">></p></button>
         </div>
     </div>
 </template>
@@ -76,30 +76,30 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
+        background: none;
         border: none;
-        font-size: 24px;
         padding: 10px;
         cursor: pointer;
         z-index: 10;
-        border-radius: 5px;
         height: 50%;
     }
 
+    .nav-btn:hover {
+        color: #5e5e5e;
+    }
+
     .prev {
-        left: 10px;
+        left: 0.5rem;
     }
 
     .next {
-        right: 10px;
+        right: 0.5rem;
     }
 
     .close-btn {
         position: absolute;
         top: 10px;
         right: 5px;
-        background: #e2e2e2;
         border: none;
         font-size: 2rem;
         font-weight: bold;
@@ -108,9 +108,15 @@
         outline: none;
         transition: color 0.2s ease;
         border-radius: 5px;
+        background: none;
     }
 
     .close-btn:hover {
         color: #5e5e5e;
+    }
+
+    .arrow {
+        font-size: 2rem;
+        font-weight: bolder;
     }
 </style>
