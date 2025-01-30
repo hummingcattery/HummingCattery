@@ -32,6 +32,7 @@
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
+        padding-top: 1rem;
     }
 
     .thumbnail-container img {
