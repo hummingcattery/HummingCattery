@@ -19,7 +19,7 @@
     <div class="content-container">
         <KittensTable :cats="[
             [`FI*Humming California Dreamin'`, `SBI n`, `naaras`, `Lemmikki`, ``],
-            [`Fi*Humming California Girls`, `SBI n`, `naaras`, `Siitostasoinen`, ``]
+            [`Fi*Humming California Girls`, `SBI n`, `naaras`, `Siitostasoinen`, `7xNOM, 6xBIS, 2xBIV, Junior Winner`]
         ]"/>
   
         <img class="img-fluid" title="6. pentue" :src="pentue6Img" alt="6. pentue" width="1141" height="1600">
