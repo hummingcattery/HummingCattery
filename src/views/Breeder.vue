@@ -40,21 +40,13 @@
             Näiden kissojen (Harppu & Halka) jäätyä eläkkeelle oli näyttelyistä useamman vuoden tauko, mutta vuonna 2022 pääsimme taas aloittamaan näyttelyttämisen, kun Hillevi muutti meille.
         </p>
         <div class="image-container">
-            <img :src="breederImg" alt="Jenni">
+            <img class="img-fluid" :src="breederImg" alt="Jenni">
         </div>
     </div>
     
 </template>
 
 <style lang="scss" scoped>
-    img {
-        object-fit: contain;
-        transform: scale(0.75);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
     .content-container {
         background-color: #F8F3FC;
         padding: 2rem;
