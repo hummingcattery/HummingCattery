@@ -1,18 +1,9 @@
-<script>
+<script setup>
     import EtusivuImage from '../assets/images/Etusivu_01.jpg'
     import VilmaImage03 from '../assets/images/Vilma_03.jpg'
     
-    export default {
-        setup() {
-            const etusivuImage = EtusivuImage;
-            const vilmaImage03 = VilmaImage03;
-
-            return {
-                etusivuImage,
-                vilmaImage03,
-            };
-        },
-    };
+    const etusivuImage = EtusivuImage;
+    const vilmaImage03 = VilmaImage03;
 </script>
 
 <template>
@@ -35,6 +26,13 @@
 </template>
 
 <style lang="scss" scoped>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
     span {
         text-decoration: underline;
     }
