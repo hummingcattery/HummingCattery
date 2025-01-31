@@ -27,8 +27,6 @@ if (GA_ID) {
         gtag('config', '${GA_ID}');
     `;
     document.head.appendChild(script2);
-
-    console.log("script2 = ", script2)
 }
 
 // Track page views when route changes
