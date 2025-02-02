@@ -62,7 +62,7 @@
 
     .navbar-nav-hover:hover {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
-              url('src/assets/images/pentue_01.jpg');
+              url('/pentue_01.jpg');
         background-size: cover;
     }
 
