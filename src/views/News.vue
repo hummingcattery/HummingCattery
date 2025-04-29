@@ -4,6 +4,15 @@
     </div>
 
     <div class="content-container">
+        <p><strong>29.4.2025</strong></p>
+        <p>
+        Huldan pentue syntyi 9.4.2025, toistaiseksi pennuista (1 tyttö, 2 poikaa) tyttö etsii sijoituskotia PK-seudulta.
+        </p>
+    </div>
+    
+    <hr>
+
+    <div class="content-container">
         <p><strong>18.1.2025</strong></p>
         <p>
         Viime päivityskerrasta on vierähtänyt puolisen vuotta. Vilmasta tuli Junior Winner saavutettuaan viidennen Best in Show -tuloksen pennuissa/nuorissa Puolan Gdyniassa 11.1.2025. :) Huldalle on toiveissa pentuja keväälle 2025, jahka kollisuunnitelmat selviävät.   

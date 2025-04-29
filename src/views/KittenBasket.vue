@@ -5,7 +5,7 @@
 
     <div class="content-container">
         <p>
-           Suunnitelmissa pentue Huldalle 2024-2025
+           Meille on syntynyt pentuja 9.4.2025. Pennut ovat luovutusiässä heinäkuussa 2025.
         </p>
     </div>
 </template>

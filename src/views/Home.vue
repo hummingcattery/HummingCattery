@@ -12,12 +12,8 @@
     </div>
     <div class="content-container">
         <p>
-            Meillä ei ole tällä hetkellä pentuja vapaana, mutta seuraava pentue on suunnitteilla keväälle 2025. Etsinnässä erityisesti sijoituksesta kiinnostuneita koteja.
-            <br>
-            Lue sijoitusehdoista <span><router-link class="nav-link" to="/Pentu-info">täältä</router-link></span>.
+            Meillä on pentuja! Huldan ja Äijän pentue syntyi 9.4.2025. Pentueessa on yksi tyttö ja kaksi poikaa. Tyttö etsii sijoituskotia.
         </p>
-        <img class="img-fluid" :src="etusivuImage" width="700" height="1000">
-
         <div style="padding-top: 1rem;">
             <p>11.1.2025 Vilma on uusi Junior Winner!</p>
             <img class="img-fluid" :src="vilmaImage03" width="700" height="1000">
