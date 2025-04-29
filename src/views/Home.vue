@@ -1,21 +1,27 @@
 <script setup>
-    import EtusivuImage from '../assets/images/Etusivu_01.jpg'
     import VilmaImage03 from '../assets/images/Vilma_03.jpg'
-    
-    const etusivuImage = EtusivuImage;
+    import { useTextStore } from "../stores/useTextStore"
+
     const vilmaImage03 = VilmaImage03;
+    const textStore = useTextStore()
 </script>
 
 <template>
     <div>
-        <h1>Tervetuloa FI*Humming pyhä birma -kissalan sivuille!</h1>
+        <h1>{{ textStore.getText("welcome") }}</h1>
     </div>
     <div class="content-container">
         <p>
-            Meillä on pentuja! Huldan ja Äijän pentue syntyi 9.4.2025. Pentueessa on yksi tyttö ja kaksi poikaa. Tyttö etsii sijoituskotia.
+            {{ textStore.getText("homeInfo") }}
+            <br>
+            <span>
+                <router-link class="nav-link" to="/Pentu-info">
+                {{textStore.getText("placementTerms")}}
+                </router-link>
+            </span>
         </p>
         <div style="padding-top: 1rem;">
-            <p>11.1.2025 Vilma on uusi Junior Winner!</p>
+            <p>{{ textStore.getText("homeInfoSecondary") }}</p>
             <img class="img-fluid" :src="vilmaImage03" width="700" height="1000">
         </div>
     </div>
