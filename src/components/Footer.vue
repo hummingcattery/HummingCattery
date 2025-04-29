@@ -19,21 +19,21 @@
                         <!-- Facebook -->
                         <a
                             class="btn btn-link btn-floating btn-lg text-dark m-1"
-                            href="https://www.facebook.com/hummingcattery/"
+                            :href="textStore.getText('facebookUrl')"
                             role="button"
                             data-mdb-ripple-color="dark"
                             target="blank_">
-                            <img class="icon-image" :src="facebookIcon" alt="Facebook icon">
+                            <img class="icon-image" :src="facebookIcon" :alt="textStore.getText('facebookAlt')">
                         </a>
 
                         <!-- Instagram -->
                         <a
                             class="btn btn-link btn-floating btn-lg text-dark m-1"
-                            href="https://www.instagram.com/hummingcattery/"
+                            :href="textStore.getText('instagramUrl')"
                             role="button"
                             data-mdb-ripple-color="dark"
                             target="blank_">
-                            <img class="icon-image" :src="instagramIcon" alt="Instagram icon">
+                            <img class="icon-image" :src="instagramIcon" :alt="textStore.getText('instagramAlt')">
                         </a>
                     </section>
                 </div>
