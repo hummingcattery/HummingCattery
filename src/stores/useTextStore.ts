@@ -297,7 +297,34 @@ export const useTextStore = defineStore("text", {
                             exhibitionSuccessResults: "7xNOM, 6xBIS, 2xBIV, Junior Winner"
                         }
                     ]
-                }
+                },
+                {
+                    parents: "JCH KCH Unica vom Lilienweg x Lofanna Äärirajoille",
+                    bornDate: "9.4.2025",
+                    kittens: [
+                        {
+                            name: "Kilpuritypy",
+                            variety: "SBI h 21",
+                            gender: "naaras",
+                            level: "N/A",
+                            exhibitionSuccessResults: ""
+                        },
+                        {
+                            name: "Pédro",
+                            variety: "SBI n",
+                            gender: "uros",
+                            level: "N/A",
+                            exhibitionSuccessResults: ""
+                        },
+                        {
+                            name: "Possu",
+                            variety: "SBI f",
+                            gender: "uros",
+                            level: "N/A",
+                            exhibitionSuccessResults: ""
+                        }
+                    ]
+                },
             ],
             KittenInfo: [
                 {
