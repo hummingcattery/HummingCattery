@@ -35,6 +35,7 @@
                                     <li><router-link class="nav-link" to="/4Pentue">4. pentue</router-link></li>
                                     <li><router-link class="nav-link" to="/5Pentue">5. pentue</router-link></li>
                                     <li><router-link class="nav-link" to="/6Pentue">6. pentue</router-link></li>
+                                    <li><router-link class="nav-link" to="/7Pentue">7. pentue</router-link></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown navbar-nav-hover">

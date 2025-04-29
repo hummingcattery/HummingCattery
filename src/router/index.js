@@ -14,6 +14,7 @@ import Pentue3 from "../views/Pentue3.vue"
 import Pentue4 from "../views/Pentue4.vue"
 import Pentue5 from "../views/Pentue5.vue"
 import Pentue6 from "../views/Pentue6.vue"
+import Pentue7 from "../views/Pentue7.vue"
 
 const routes = [
   {
@@ -95,10 +96,11 @@ const routes = [
     name: "6pentue",
     component: Pentue6,
   },
-  // {
-  //   path: '/:pathMatch(.*)',
-  //   component: NotFoundComponent
-  // }
+  {
+    path: "/7pentue",
+    name: "7pentue",
+    component: Pentue7,
+  },
 ];
 
 const router = createRouter({
