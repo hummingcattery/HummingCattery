@@ -47,7 +47,7 @@
         :name='`"Vilma" JCH KCH Fi*Humming California Girls JW`'
         :variety="'SBI n'"
         :lifeDates="'26.2.2024'"
-        :exhibitionSuccessResults="'7xNOM, 6xBIS, 2xBIV, Junior Winner'"
+        :exhibitionSuccessResults="'8xNOM, 7xBIS, 4xBIV, Junior Winner'"
         :pedigreeAddress="'https://kissat.kissaliitto.fi/Pedigree?id=329981'"
         :image="vilmaImg"
         :gallery="vilmaImages"
