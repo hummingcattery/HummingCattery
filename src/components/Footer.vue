@@ -1,9 +1,11 @@
 <script setup>
     import FacebookIcon from '../components/icons/Facebook_icon.svg'
     import InstagramIcon from '../components/icons/Instagram_icon.svg'
+    import { useTextStore } from "../stores/useTextStore"
     
     const facebookIcon = FacebookIcon;
     const instagramIcon = InstagramIcon;
+    const textStore = useTextStore()
 </script>
 
 <template>
@@ -36,7 +38,7 @@
                     </section>
                 </div>
                 <div>
-                    <p>Päivitetty 29.4.2025</p>
+                    <p>{{textStore.getText("previouslyUpdatedTitle")}} {{textStore.getText("previouslyUpdatedDate")}}</p>
                 </div>
             </footer>
         </div>
