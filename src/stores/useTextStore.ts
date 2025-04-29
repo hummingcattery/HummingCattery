@@ -27,7 +27,7 @@ export const useTextStore = defineStore("text", {
                                 Tavoitteenani on kasvattaa terveitä, kauniita, hyväluonteisia birmoja joilla on se oikea "birmalook", myös birmojen geenipoolin laajentaminen on tärkeä arvo kasvatustyössä. Vuonna 2023 haimme kasvattajakollegan kanssa Yhdysvalloista uroksen, vuotta aikaisemmin naaraan Espanjasta, joten "vieraan veren" tuominen kasvatukseen on itselleni äärimmäisen tärkeää.\n
                                 Näyttelykärpänen puraisi itseäni jo lapsena, ja kissoillani onkin ollut loistavaa menestystä aikanaan näyttelyrintamalla ("Halka" SC SP FI*Recknagel Tairapänks, DVM DSM oli mm. Kissaliiton vuoden kissa vuonna 2014). Näiden kissojen (Harppu & Halka) jäätyä eläkkeelle oli näyttelyistä useamman vuoden tauko, mutta vuonna 2022 pääsimme taas aloittamaan näyttelyttämisen, kun Hillevi muutti meille.`,
             previouslyUpdatedTitle: "Päivitetty",
-            previouslyUpdatedDate: "2.2.2025",
+            previouslyUpdatedDate: "29.4.2025",
             emailTitle: "sähköposti",
             emailAddress: "hummingcattery@gmail.com",
             phoneTitle: "puh.",
