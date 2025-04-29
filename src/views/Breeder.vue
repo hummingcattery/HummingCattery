@@ -19,7 +19,7 @@
 
     <div class="content-container">
         <p>
-            Olen Jenni Mäkinen, 35-vuotias alunperin Pirkanmaalta (Vammalasta) ja Tampereen kautta Helsinkiin ponnistanut nainen. Ensimmäisen birmani "Inkun" sain vuonna
+            Olen Jenni Mäkinen, 36-vuotias alunperin Pirkanmaalta (Vammalasta) ja Tampereen kautta Helsinkiin ponnistanut nainen. Ensimmäisen birmani "Inkun" sain vuonna
             2000 ollessani 11-vuotias. Inkku ei koskaan asunut luonani, vaan (FI*Recknagel) -nimellä kasvatusta tehneiden tätieni Marjo ja Merja Mäkisen luona. Inkku oli
             kuitenkin itselleni se ponnistus siihen, että oma rotuni on ja tulee aina olemaan pyhä birma. Ensimmäisen omaan kotiin muuttaneen kissan Harpun sain vuonna 2008
             Zhamanen-kasvattaja Mariia Touroselta, Harppu oli alkuun sijoituksessa ja lopulta omistajuus siirrettiin minulle. Harppu on varmasti se elämäni kissa, kaunein, lempein
