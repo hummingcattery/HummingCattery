@@ -13,9 +13,9 @@ const app = createApp(App);
 const pinia = createPinia();
 
 app.use(pinia);
-app.use(router);
 app.use(VueGtag, {
     config: { id: import.meta.env.VITE_GOOGLE_ANALYTICS }
 }, router);
+app.use(router);
 
 app.mount("#app");
