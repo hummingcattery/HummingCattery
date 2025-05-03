@@ -31,3 +31,4 @@ coverage
 
 # Ignore environment variables file
 .env
+.env.production
