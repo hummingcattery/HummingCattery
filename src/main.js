@@ -7,20 +7,14 @@ import App from './App.vue'
 import router from './router'
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
-import { loadGoogleAnalytics } from './analytics';
 
+const app = createApp(App);
 const pinia = createPinia();
 
-// Load Google Tag dynamically
-loadGoogleAnalytics(import.meta.env.VITE_GOOGLE_ANALYTICS);
+app.use(pinia);
+app.use(router);
+app.use(VueGtag, {
+  config: { id: import.meta.env.ITE_GOOGLE_ANALYTICS }
+}, router);
 
-// Track route changes
-router.afterEach((to) => {
-    if (window.gtag) {
-      window.gtag('config', import.meta.env.VITE_GOOGLE_ANALYTICS, {
-        page_path: to.fullPath,
-      });
-    }
-});
-
-createApp(App).use(router).use(pinia).mount("#app");
+app.mount("#app");
