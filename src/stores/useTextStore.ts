@@ -14,7 +14,8 @@ export const useTextStore = defineStore("text", {
             homeInfo: "Meillä on pentuja! Huldan ja Äijän pentue syntyi 9.4.2025. Pentueessa on yksi tyttö ja kaksi poikaa. Tyttö etsii sijoituskotia.",
             homeInfoSecondary: "11.1.2025 Vilma on uusi Junior Winner!",
             placementTerms: `Lue sijoitusehdoista`,
-            newsHeader: "Uutiset",
+            headerNews: "Uutiset",
+            headerBreeder: "Kasvattaja",
             kittenBasket: "Pentukori",
             kittenBasketInfo: "Suunnitelmissa pentue Huldalle 2024-2025",
             kittens: "Pennut",
@@ -22,10 +23,16 @@ export const useTextStore = defineStore("text", {
             color: "Väri",
             gender: "Sukupuoli",
             level: "Taso",
-            breederIntrodction1: `Olen Jenni Mäkinen, 36-vuotias alunperin Pirkanmaalta (Vammalasta) ja Tampereen kautta Helsinkiin ponnistanut nainen. Ensimmäisen birmani "Inkun" sain vuonna 2000 ollessani 11-vuotias. Inkku ei koskaan asunut luonani, vaan (FI*Recknagel) -nimellä kasvatusta tehneiden tätieni Marjo ja Merja Mäkisen luona. Inkku oli kuitenkin itselleni se ponnistus siihen, että oma rotuni on ja tulee aina olemaan pyhä birma. Ensimmäisen omaan kotiin muuttaneen kissan Harpun sain vuonna 2008 Zhamanen-kasvattaja Mariia Touroselta, Harppu oli alkuun sijoituksessa ja lopulta omistajuus siirrettiin minulle. Harppu on varmasti se elämäni kissa, kaunein, lempein empaattisin, ei sitä edes pysty selittämään. Harppu menehtyi 15 vuoden iässä vuoden 2023 joulukuussa taisteltuaan 1,5 vuotta maitorauhaskasvaimia vastaan.\n
-                                FI*Humming -kasvattajanimen hankin vuonna 2012, ensimmäinen pentue oli Harpun ja TT:n Pink Floyd -pentue, joka syntyi 3.3.2013. Kaikkiin pentueisiin pääsee tutustumaan Pentueet-sivulta.\n
-                                Tavoitteenani on kasvattaa terveitä, kauniita, hyväluonteisia birmoja joilla on se oikea "birmalook", myös birmojen geenipoolin laajentaminen on tärkeä arvo kasvatustyössä. Vuonna 2023 haimme kasvattajakollegan kanssa Yhdysvalloista uroksen, vuotta aikaisemmin naaraan Espanjasta, joten "vieraan veren" tuominen kasvatukseen on itselleni äärimmäisen tärkeää.\n
-                                Näyttelykärpänen puraisi itseäni jo lapsena, ja kissoillani onkin ollut loistavaa menestystä aikanaan näyttelyrintamalla ("Halka" SC SP FI*Recknagel Tairapänks, DVM DSM oli mm. Kissaliiton vuoden kissa vuonna 2014). Näiden kissojen (Harppu & Halka) jäätyä eläkkeelle oli näyttelyistä useamman vuoden tauko, mutta vuonna 2022 pääsimme taas aloittamaan näyttelyttämisen, kun Hillevi muutti meille.`,
+            breederIntrodction1: `Olen Jenni Mäkinen, 36-vuotias alunperin Pirkanmaalta (Vammalasta) ja Tampereen kautta Helsinkiin ponnistanut nainen. Ensimmäisen birmani "Inkun" sain vuonna
+                2000 ollessani 11-vuotias. Inkku ei koskaan asunut luonani, vaan (FI*Recknagel) -nimellä kasvatusta tehneiden tätieni Marjo ja Merja Mäkisen luona. Inkku oli
+                kuitenkin itselleni se ponnistus siihen, että oma rotuni on ja tulee aina olemaan pyhä birma. Ensimmäisen omaan kotiin muuttaneen kissan Harpun sain vuonna 2008
+                Zhamanen-kasvattaja Mariia Touroselta, Harppu oli alkuun sijoituksessa ja lopulta omistajuus siirrettiin minulle. Harppu on varmasti se elämäni kissa, kaunein, lempein
+                empaattisin, ei sitä edes pysty selittämään. Harppu menehtyi 15 vuoden iässä vuoden 2023 joulukuussa taisteltuaan 1,5 vuotta maitorauhaskasvaimia vastaan.`,
+            breederIntrodction2: `FI*Humming -kasvattajanimen hankin vuonna 2012, ensimmäinen pentue oli Harpun ja TT:n Pink Floyd -pentue, joka syntyi 3.3.2013. Kaikkiin pentueisiin pääsee tutustumaan Pentueet-sivulta.`,
+            breederIntrodction3: `Tavoitteenani on kasvattaa terveitä, kauniita, hyväluonteisia birmoja joilla on se oikea "birmalook", myös birmojen geenipoolin laajentaminen on tärkeä arvo kasvatustyössä. Vuonna 2023
+                haimme kasvattajakollegan kanssa Yhdysvalloista uroksen, vuotta aikaisemmin naaraan Espanjasta, joten "vieraan veren" tuominen kasvatukseen on itselleni äärimmäisen tärkeää.`,
+            breederIntrodction4: `Näyttelykärpänen puraisi itseäni jo lapsena, ja kissoillani onkin ollut loistavaa menestystä aikanaan näyttelyrintamalla ("Halka" SC SP FI*Recknagel Tairapänks, DVM DSM oli mm. Kissaliiton vuoden kissa vuonna 2014).',
+                Näiden kissojen (Harppu & Halka) jäätyä eläkkeelle oli näyttelyistä useamman vuoden tauko, mutta vuonna 2022 pääsimme taas aloittamaan näyttelyttämisen, kun Hillevi muutti meille.`,
             previouslyUpdatedTitle: "Päivitetty",
             previouslyUpdatedDate: "29.4.2025",
             emailTitle: "sähköposti",
