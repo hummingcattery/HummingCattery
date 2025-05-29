@@ -1,5 +1,5 @@
 <script setup>
-    import {defineProps} from "vue";
+    import {defineProps, computed} from "vue";
 
     const props = defineProps({
         name: String,
@@ -10,11 +10,16 @@
         exhibitionSuccessResults: String,
         image: String
     });
+
+    const quotedName = computed(() => {
+        const [first, ...rest] = props.name.split(' ')
+        return `"${first}" ${rest.join(' ')}`
+    })
 </script>
 
 <template>
     <div class="content-container">
-        <h5>{{props.name}}</h5>
+        <h5>{{quotedName}}</h5>
         <p>{{props.variety}}
             <br>
                 s. {{props.lifeDates}}
