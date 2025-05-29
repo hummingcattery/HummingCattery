@@ -1,5 +1,8 @@
 <script setup>
     import KittensTable from '../components/KittensTable.vue';
+    import Pentue7Img from '../assets/images/pentue_07.jpeg'
+
+    const pentue7Img = Pentue7Img;
 </script>
 
 <template>
@@ -19,6 +22,8 @@
             ['Pédro', 'SBI c', 'uros', 'N/A', ''],
             ['Possu', 'SBI c', 'uros', 'N/A', '']
         ]"/>
+
+        <img class="img-fluid" title="7. pentue" :src="pentue7Img" alt="7. pentue" width="1141" height="1600">
     </div>
 </template>
 
