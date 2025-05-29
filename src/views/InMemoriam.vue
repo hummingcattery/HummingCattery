@@ -2,32 +2,34 @@
     import HarppuImg from "../assets/images/Harppu_01.jpg";
     import HalkaImg from "../assets/images/Halka_01.jpg";
     import Card from "../components/Card.vue";
+    import { useTextStore } from "../stores/useTextStore"
     
     const harppuImg = HarppuImg;
     const halkaImg = HalkaImg;
+    const textStore = useTextStore()
 </script>
 
 <template>
     <div>
         <Card
-            :name='`"Halka" SP, SC Recknagel Tairapänks, DVM, DSM`'
-            :variety="'SBI a'"
-            :lifeDates="'21.6.2009 - 23.1.2025'"
-            :tom="'IC FI*Zhamanen Fangio, JW (SBI n)'"
-            :queen="'FI*Recknagel Fridakahlo (SBI b)'"
-            :exhibitionSuccessResults="'Multi BIS (& BIV & NOM) Winner Vuoden kissa 2014'"
+            :name="`${textStore.getText('cats.halka.name')} ${textStore.getText('cats.halka.fullname')}`"
+            :variety="textStore.getText('cats.halka.variety')"
+            :lifeDates="textStore.getText('cats.halka.lifeDates')"
+            :tom="textStore.getText('cats.halka.tom')"
+            :queen="textStore.getText('cats.halka.queen')"
+            :exhibitionSuccessResults="textStore.getText('cats.halka.exhibitionSuccessResults')"
             :image="halkaImg"
         />
 
         <hr>
 
         <Card
-            :name='`"Harppu" SP, SC Zhamanen Harlequin, DVM DSM`'
-            :variety="'SBI n 21'"
-            :lifeDates="'28.7.2008 - 12.12.2023'"
-            :tom="'EC FI*JoJon El Rayo Rumba (SBI n 21)'"
-            :queen="'IC FI*Zhamanen Ferrarina N.F.S. (SBI h)'"
-            :exhibitionSuccessResults="'Multi BIS, BIV, NOM -winner'"
+            :name="`${textStore.getText('cats.harppu.name')} ${textStore.getText('cats.harppu.fullname')}`"
+            :variety="textStore.getText('cats.harppu.variety')"
+            :lifeDates="textStore.getText('cats.harppu.lifeDates')"
+            :tom="textStore.getText('cats.harppu.tom')"
+            :queen="textStore.getText('cats.harppu.queen')"
+            :exhibitionSuccessResults="textStore.getText('cats.harppu.exhibitionSuccessResults')"
             :image="harppuImg"
         />
   </div>
