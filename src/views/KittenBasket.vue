@@ -1,3 +1,17 @@
+<script>
+    import PossuImg from '../assets/images/Possu_01.jpeg';
+
+    export default {
+        setup() {
+            const possuImg = PossuImg;
+
+            return {
+                possuImg,
+            };
+        },
+    };
+</script>
+
 <template>
     <div>
         <h1>Pentukori</h1>
@@ -7,12 +21,24 @@
         <p>
            Meille on syntynyt pentuja 9.4.2025. Pennut ovat luovutusiässä heinäkuussa 2025.
         </p>
+
+        <br/>
+
+        <p>
+           9.4.2025 syntynyt ”Possu” poika etsii kotia 💕
+        </p>
+
+        <div class="image-container">
+            <img class="img-fluid" :src="possuImg" alt='"Possu"' width="700" height="1000">
+        </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
     img {
-        object-fit: contain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     p {
@@ -32,6 +58,12 @@
     .content-container {
         background-color: #F8F3FC;
         padding: 2rem;
+    }
+
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .row {
