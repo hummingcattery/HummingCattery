@@ -1,15 +1,4 @@
 <script>
-    import PossuImg from '../assets/images/Possu_01.jpeg';
-
-    export default {
-        setup() {
-            const possuImg = PossuImg;
-
-            return {
-                possuImg,
-            };
-        },
-    };
 </script>
 
 <template>
@@ -23,14 +12,6 @@
         </p>
 
         <br/>
-
-        <p>
-           9.4.2025 syntynyt ”Possu” poika etsii kotia 💕
-        </p>
-
-        <div class="image-container">
-            <img class="img-fluid" :src="possuImg" alt='"Possu"' width="700" height="1000">
-        </div>
     </div>
 </template>
 
