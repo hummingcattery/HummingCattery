@@ -1,11 +1,9 @@
 <script setup>
     import EtusivuImage from '../assets/images/Etusivu_01.jpeg'
     import VilmaImage03 from '../assets/images/Vilma_03.jpg'
-    import PossuImage from '../assets/images/Possu_01.jpeg'
     
     const etusivuImage = EtusivuImage;
     const vilmaImage03 = VilmaImage03;
-    const possuImage = PossuImage;
 </script>
 
 <template>
@@ -13,11 +11,6 @@
         <h1>Tervetuloa FI*Humming pyhä birma -kissalan sivuille!</h1>
     </div>
     <div class="content-container">
-        <div>
-            <p>Suloinen lilatabbynaamio ”Possu” etsii vielä omaa, mahdollisesti myös vähän näyttelyistä kiinnostunutta, kotia!</p>
-            <img class="img-fluid" :src="possuImage" width="700" height="1000">
-        </div>
-
         <div style="padding-top: 1rem;">
             <p>
                 Meillä on pentuja! Huldan ja Äijän pentue syntyi 9.4.2025. Pentueessa on yksi tyttö ja kaksi poikaa. Tyttö etsii sijoituskotia.
