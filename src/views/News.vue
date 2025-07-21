@@ -4,6 +4,17 @@
     </div>
 
     <div class="content-container">
+        <p><strong>21.7.2025</strong></p>
+        <p>
+        Huldan pennut ovat jo luovutusiässä. Possu on ehtinyt muuttaa omaan kotiinsa Espooseen, Pedro muuttaa elokuussa Turkuun. Tyttöpentu on toistaiseksi
+        kotona kasvamassa, jotta mahdollinen (näyttely)taso selviää -  toisessa takasukassa on salakavalasti paljon cremeväriä, jonka rajoja on
+        hankala erottaa. :) Pennut tekevät ensinäyttelyesiintymisensä Kes-Kisin näyttelyssä Laukaalla elokuussa 2025. 
+        </p>
+    </div>
+    
+    <hr>
+
+    <div class="content-container">
         <p><strong>29.4.2025</strong></p>
         <p>
         Huldan pentue syntyi 9.4.2025, toistaiseksi pennuista (1 tyttö, 2 poikaa) tyttö etsii sijoituskotia PK-seudulta.

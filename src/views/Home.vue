@@ -13,7 +13,7 @@
     <div class="content-container">
         <div style="padding-top: 1rem;">
             <p>
-                Meillä on pentuja! Huldan ja Äijän pentue syntyi 9.4.2025. Pentueessa on yksi tyttö ja kaksi poikaa. Tyttö etsii sijoituskotia.
+                Huldan ja Äijän pentue syntyi 9.4.2025. Pojilla on jo omat kodit, tyttö on toistaiseksi tasoseurannassa. 
             </p>
             <img class="img-fluid" :src="etusivuImage" width="700" height="1000">
         </div>

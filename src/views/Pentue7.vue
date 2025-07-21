@@ -18,9 +18,9 @@
     <h3>Pennut</h3>
     <div class="content-container">
         <KittensTable :cats="[
-            ['Kilpuritypy', 'SBI h 21', 'naaras', 'N/A', ''],
-            ['Pédro', 'SBI c', 'uros', 'N/A', ''],
-            ['Possu', 'SBI c', 'uros', 'N/A', '']
+            ['FI*Humming Cornflake Girl', 'SBI h 21', 'naaras', 'N/A', ''],
+            ['FI*Humming Silent All These Years', 'SBI c', 'uros', 'Näyttely', ''],
+            ['FI*Humming Happy Phantom', 'SBI c 21', 'uros', 'Näyttely/siitos', '']
         ]"/>
 
         <img class="img-fluid" title="7. pentue" :src="pentue7Img" alt="7. pentue" width="1141" height="1600">

@@ -8,7 +8,7 @@
 
     <div class="content-container">
         <p>
-           Meille on syntynyt pentuja 9.4.2025. Pennut ovat luovutusiässä heinäkuussa 2025.
+            Pentukori toistaiseksi tyhjä.
         </p>
 
         <br/>
