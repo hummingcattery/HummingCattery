@@ -23,7 +23,7 @@
             ['Humming Visslaren', 'SBI c 21', 'naaras', 'Lemmikki', '']
         ]"/>
   
-        <img class="img-fluid" title="5. pentue" :src="pentue5Img" alt="5. pentue" width="1141" height="1600">
+        <img class="img-fluid smaller-img d-block mx-auto" title="5. pentue" :src="pentue5Img" alt="5. pentue">
     </div>
 </template>
 

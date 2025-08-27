@@ -22,7 +22,7 @@
             ['Humming High Hopes', 'SBI c', 'naaras', 'Siitostasoinen', 'BIS-winner']
         ]"/>
 
-        <img class="img-fluid" title="1. pentue" :src="pentue1Img" alt="1. pentue" width="903" height="570">
+        <img class="img-fluid smaller-img d-block mx-auto" title="1. pentue" :src="pentue1Img" alt="1. pentue">
     </div>
 </template>
 

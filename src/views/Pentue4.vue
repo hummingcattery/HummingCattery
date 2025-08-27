@@ -23,7 +23,7 @@
             ['Humming Paranoid Android', 'SBI f', 'naaras', 'Näyttely/siitos', 'Nominated for BIS']
         ]"/>
 
-        <img class="img-fluid" title="4. pentue" :src="pentue4Img" alt="4. pentue" width="1600" height="1200">
+        <img class="img-fluid smaller-img d-block mx-auto" title="4. pentue" :src="pentue4Img" alt="4. pentue">
     </div>
 </template>
 

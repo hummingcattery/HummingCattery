@@ -28,12 +28,9 @@
         >
         <div class="img-container">
             <img
-                class="img-fluid"
+                class="img-fluid smaller-img d-block mx-auto"
                 :title="props.name"
                 :src="props.image"
-                alt="Vilma"
-                width="1300"
-                height="953"
             />
             <Thumbnails :gallery="props.gallery" :modalComponent="props.modalComponent" />
         </div>
@@ -58,5 +55,6 @@
     .img-container {
         margin-left: auto;
         margin-right: auto;
+        justify-content: center
     }
 </style>

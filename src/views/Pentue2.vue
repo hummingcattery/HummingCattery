@@ -24,7 +24,7 @@
             ['Humming Bullet Boy', 'SBI c', 'uros', 'Lemmikki', '']
         ]"/>
       
-        <img class="img-fluid" title="2. pentue" :src="pentue2Img" alt="2. pentue" width="943" height="558">
+        <img class="img-fluid smaller-img d-block mx-auto" title="2. pentue" :src="pentue2Img" alt="2. pentue">
     </div>
 </template>
 

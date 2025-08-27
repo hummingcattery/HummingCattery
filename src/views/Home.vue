@@ -15,12 +15,12 @@
             <p>
                 Huldan ja Äijän pentue syntyi 9.4.2025. Pojilla on jo omat kodit, tyttö on toistaiseksi tasoseurannassa. 
             </p>
-            <img class="img-fluid" :src="etusivuImage" width="700" height="1000">
+            <img class="img-fluid smaller-img d-block mx-auto" :src="etusivuImage">
         </div>
         
         <div style="padding-top: 1rem;">
             <p>11.1.2025 Vilma on uusi Junior Winner!</p>
-            <img class="img-fluid" :src="vilmaImage03" width="700" height="1000">
+            <img class="img-fluid smaller-img d-block mx-auto" :src="vilmaImage03">
         </div>
     </div>
 </template>

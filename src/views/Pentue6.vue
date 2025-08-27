@@ -22,7 +22,7 @@
             [`Fi*Humming California Girls`, `SBI n`, `naaras`, `Siitostasoinen`, `8xNOM, 7xBIS, 4xBIV, Junior Winner`]
         ]"/>
   
-        <img class="img-fluid" title="6. pentue" :src="pentue6Img" alt="6. pentue" width="1141" height="1600">
+        <img class="img-fluid smaller-img d-block mx-auto" title="6. pentue" :src="pentue6Img" alt="6. pentue">
     </div>
 </template>
 

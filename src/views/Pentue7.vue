@@ -23,7 +23,7 @@
             ['FI*Humming Happy Phantom', 'SBI c 21', 'uros', 'Näyttely/siitos', '']
         ]"/>
 
-        <img class="img-fluid" title="7. pentue" :src="pentue7Img" alt="7. pentue" width="1141" height="1600">
+        <img class="img-fluid smaller-img d-block mx-auto" title="7. pentue" :src="pentue7Img" alt="7. pentue">
     </div>
 </template>
 

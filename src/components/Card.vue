@@ -26,7 +26,7 @@
             </p>
         <p>Näyttelymenestys: {{props.exhibitionSuccessResults}}</p>
         <div col-3>
-            <img class="img-fluid" :title="props.name" :src="props.image" :alt="props.name" width="900" height="600">
+            <img class="img-fluid smaller-img d-block mx-auto" :title="props.name" :src="props.image" :alt="props.name">
         </div>
     </div>
 </template>

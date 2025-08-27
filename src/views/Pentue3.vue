@@ -22,7 +22,7 @@
             ['Humming Staralfur', 'SBI a 21', 'uros', 'Lemmikki', '']
         ]"/>
 
-        <img class="img-fluid" title="3. pentue" :src="pentue3Img" alt="3. pentue" width="1600" height="1064">
+        <img class="img-fluid smaller-img d-block mx-auto" title="3. pentue" :src="pentue3Img" alt="3. pentue">
     </div>
 </template>
 
