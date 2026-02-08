@@ -15,12 +15,18 @@
     import VilmaImg2 from '../assets/images/Vilma_02.jpg';
     import VilmaImg3 from '../assets/images/Vilma_03.jpg';
     import VilmaImg4 from '../assets/images/Vilma_04.jpg';
+    import PipsaImg1 from '../assets/images/Pipsa_01.jpg';
+    import PipsaImg2 from '../assets/images/Pipsa_02.jpg';
+    import PipsaImg3 from '../assets/images/Pipsa_03.jpg';
+    import PipsaImg4 from '../assets/images/Pipsa_04.jpg';
+    import PipsaImg5 from '../assets/images/Pipsa_05.jpg';
     import CardWithThumbnails from '../components/CardWithThumbnails.vue';
     import Modal from '../components/Modal.vue';
 
     const hilleviImg = HilleviImg1;
     const huldaImg = HuldaImg1;
     const vilmaImg = VilmaImg2;
+    const pipsaImg = PipsaImg2;
 
     const vilmaImages = [VilmaImg1, VilmaImg2, VilmaImg4, VilmaImg3];
     const huldaImages = [
@@ -39,9 +45,30 @@
         HilleviImg5,
         HilleviImg6,
     ];
+    const pipsaImages = [
+        PipsaImg5,
+        PipsaImg1,
+        PipsaImg2,
+        PipsaImg4,
+        PipsaImg3,
+    ];
 </script>
 
 <template>
+    <!-- Pipsa Section -->
+    <CardWithThumbnails 
+        :name='`"Pippa" KCH FI*Humming Cornflake Girl`'
+        :variety="'	SBI h 21'"
+        :lifeDates="'9.4.2025'"
+        :exhibitionSuccessResults="'Kitten Champion'"
+        :pedigreeAddress="'https://kissat.kissaliitto.fi/perusnaytto_kissa.aspx?id=349832'"
+        :image="pipsaImg"
+        :gallery="pipsaImages"
+        :modalComponent="Modal"
+    />
+
+    <hr />
+
     <!-- Vilma Section -->
     <CardWithThumbnails 
         :name='`"Vilma" JCH KCH Fi*Humming California Girls JW`'
