@@ -8,7 +8,7 @@
 
     <div class="content-container">
         <p>
-            Pentukori toistaiseksi tyhjä.
+            Seuraava pentue suunnitteilla (jos kaikki menee odotetusti) huhtikuulle 2026.
         </p>
 
         <br/>
