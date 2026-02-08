@@ -47,5 +47,20 @@ html {
 }
 
 .img-fluid.smaller-img {
-  max-width: 50%;
+  max-width: 100%; /* Full width on mobile */
+  width: 100%;
+}
+
+/* Desktop: make images smaller */
+@media (min-width: 768px) {
+  .img-fluid.smaller-img {
+    max-width: 60%;
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-fluid.smaller-img {
+    max-width: 50%;
+  }
 }
