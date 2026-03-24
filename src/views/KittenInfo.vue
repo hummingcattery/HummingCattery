@@ -13,7 +13,7 @@
         </p>
 
         <p>
-            Myytävän pennun hinta on 1400 EUR.<br>
+            Myytävän pennun hinta on 1500 EUR.<br>
             Sijoituspentu maksaa 600 EUR (joka on ns. takuu), summa palautetaan sijoituskodille, kun sijoitusehdot (1-2 pentuetta) on täytetty, tässä kohtaa myös
             kissan omistajuus siirretään sijoituskodin nimiin. Jos pentuja ei jostain syystä synny, sijoituspennun takuusummaa ei palauteta.
         </p>
