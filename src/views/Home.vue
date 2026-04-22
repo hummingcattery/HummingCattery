@@ -1,7 +1,9 @@
 <script setup>
     import HuldaPipsaImage from '../assets/images/HuldaPipsa01.jpg'
+    import Pentue08Image from '../assets/images/pentue_08.jpg'
     
     const huldaPipsaImage = HuldaPipsaImage;
+    const pentue08Image = Pentue08Image;
 </script>
 
 <template>
@@ -9,11 +11,12 @@
         <h1>Tervetuloa FI*Humming pyhä birma -kissalan sivuille! 
         </h1>
     </div>
+
     <div class="content-container">
-        <div style="padding-top: 1rem;">
-            <p>8.2.2026 Seuraava pentue suunnitteilla keväälle 2026.
-                Kuvassa (alla) Hulda ja Pippa.
-            </p>
+        <div>
+            <p>22.4.2026 Meillä on pentuja!<br/>Huldan pennut syntyneet 7.4.2026, lisätietoja pentukorissa!</p>
+            <img class="img-fluid smaller-img d-block mx-auto" :src="pentue08Image">
+            <br/>
             <img class="img-fluid smaller-img d-block mx-auto" :src="huldaPipsaImage">
         </div>
     </div>

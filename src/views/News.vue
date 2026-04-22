@@ -4,6 +4,15 @@
     </div>
 
     <div class="content-container">
+        <p><strong>22.4.2026</strong></p>
+        <p>
+            Meille on syntynyt pentuja! Hulda synnytti 7.4.2026 neljä pentua, jotka kasvavat hienosti pentupesässään Huldan huolellisessa hoivassa.<br/>Vielä ei ole selvyyttä pentujen tasoista, mutta ainakin toinen tyttöpentu etsii sijoituskotia PK-seudulta.<br/>Mahdollista myös sijoittaa molemmat tytöt samaan kotiin. Otathan yhteyttä, mikäli tällainen järjestely kiinnostaa. 😊
+        </p>
+    </div>
+    
+    <hr>
+
+    <div class="content-container">
         <p><strong>21.7.2025</strong></p>
         <p>
         Huldan pennut ovat jo luovutusiässä. Possu on ehtinyt muuttaa omaan kotiinsa Espooseen, Pedro muuttaa elokuussa Turkuun. Tyttöpentu on toistaiseksi

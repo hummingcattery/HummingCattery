@@ -1,4 +1,7 @@
-<script>
+<script setup>
+    import Pentue08Image from '../assets/images/pentue_08.jpg'
+    
+    const pentue08Image = Pentue08Image;
 </script>
 
 <template>
@@ -7,10 +10,18 @@
     </div>
 
     <div class="content-container">
-        <p>
-            Seuraava pentue suunnitteilla (jos kaikki menee odotetusti) huhtikuulle 2026.
-        </p>
+        <p>Pennut syntyneet 7.4.2026 yhdistelmästä: CH JCH KCH Unica vom Lilienweg x KCH FI*Njaalan Puolâš</p>
 
+        <br/>
+        <ul>
+            <li>Lilanaamio (poika)</li>
+            <li>Suklaatabbynaamio (poika)</li>
+            <li>Suklaatabbynaamio (tyttö)</li>
+            <li>Suklaanaamio (tyttö)</li>
+        </ul>
+
+        <p>Tytöistä ainakin toinen etsii sijoituskotia. Jos pentueessa on näyttelytasoisia pentuja, etsimme ensisijaisesti näyttelyistä kiinnostuneita koteja.</p>
+        <img class="img-fluid smaller-img d-block mx-auto" :src="pentue08Image">
         <br/>
     </div>
 </template>
@@ -25,7 +36,6 @@
     p {
         margin-top: 0;
         margin-bottom: 0;
-        text-align: center;
     }
 
     tr > th {
