@@ -1,8 +1,8 @@
 <script setup>
     import HuldaPipsaImage from '../assets/images/HuldaPipsa01.jpg'
     import Pentue08Image from '../assets/images/pentue_08.jpg'
-    import Parikuva01Image from '../assets/images/parikuva_01.jpg'
-    import Ryhmakuva01Image from '../assets/images/ryhmakuva_01.jpg'
+    import Parikuva01Image from '../assets/images/Parikuva_01.jpg'
+    import Ryhmakuva01Image from '../assets/images/Ryhmakuva_01.jpg'
     
     const huldaPipsaImage = HuldaPipsaImage;
     const pentue08Image = Pentue08Image;

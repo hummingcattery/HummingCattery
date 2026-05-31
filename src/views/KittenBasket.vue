@@ -1,5 +1,5 @@
 <script setup>
-    import ParikuvaImage from '../assets/images/parikuva_01.jpg'
+    import ParikuvaImage from '../assets/images/Parikuva_01.jpg'
     
     const parikuvaImage = ParikuvaImage;
 </script>
