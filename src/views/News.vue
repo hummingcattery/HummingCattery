@@ -4,6 +4,15 @@
     </div>
 
     <div class="content-container">
+        <p><strong>31.5.2026</strong></p>
+        <p>
+            Huldan pennut ovat kasvaneet hienosti ja pennut on myös jo saaneet rekisterinimensä. Tabbypennut Hime ja Morso on varattu. Lilanaamio-poika Miso etsii vielä omaa kotia, suklaanaamio Hanami etsii sijoituskotia pk-seudulta.
+        </p>
+    </div>
+    
+    <hr>
+
+    <div class="content-container">
         <p><strong>22.4.2026</strong></p>
         <p>
             Meille on syntynyt pentuja! Hulda synnytti 7.4.2026 neljä pentua, jotka kasvavat hienosti pentupesässään Huldan huolellisessa hoivassa.<br/>Vielä ei ole selvyyttä pentujen tasoista, mutta ainakin toinen tyttöpentu etsii sijoituskotia PK-seudulta.<br/>Mahdollista myös sijoittaa molemmat tytöt samaan kotiin. Otathan yhteyttä, mikäli tällainen järjestely kiinnostaa. 😊

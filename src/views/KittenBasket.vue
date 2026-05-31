@@ -1,7 +1,7 @@
 <script setup>
-    import Pentue08Image from '../assets/images/pentue_08.jpg'
+    import ParikuvaImage from '../assets/images/parikuva_01.jpg'
     
-    const pentue08Image = Pentue08Image;
+    const parikuvaImage = ParikuvaImage;
 </script>
 
 <template>
@@ -21,7 +21,7 @@
         </ul>
 
         <p>Tytöistä ainakin toinen etsii sijoituskotia. Jos pentueessa on näyttelytasoisia pentuja, etsimme ensisijaisesti näyttelyistä kiinnostuneita koteja.</p>
-        <img class="img-fluid smaller-img d-block mx-auto" :src="pentue08Image">
+        <img class="img-fluid smaller-img d-block mx-auto" :src="parikuvaImage">
         <br/>
     </div>
 </template>
