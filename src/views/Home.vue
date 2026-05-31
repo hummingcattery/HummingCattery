@@ -22,13 +22,6 @@
             <img class="img-fluid smaller-img d-block mx-auto" :src="parikuva01Image">
             <br/>
             <img class="img-fluid smaller-img d-block mx-auto" :src="ryhmakuva01Image">
-        </div>
-    </div>
-
-    <div class="content-container">
-        <div>
-            <p>22.4.2026 Meillä on pentuja!<br/>Huldan pennut syntyneet 7.4.2026, lisätietoja pentukorissa!</p>
-            <img class="img-fluid smaller-img d-block mx-auto" :src="pentue08Image">
             <br/>
             <img class="img-fluid smaller-img d-block mx-auto" :src="huldaPipsaImage">
         </div>
