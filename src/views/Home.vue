@@ -18,9 +18,6 @@
 
     <div class="content-container">
         <div>
-            <p>31.5.2026 Huldan pennuista (s. 7.4.2026) vapaana lilanaamio poika, suklaanaamio tyttö etsii sijoituskotia pk-seudulta.</p>
-            <img class="img-fluid smaller-img d-block mx-auto" :src="parikuva01Image">
-            <br/>
             <img class="img-fluid smaller-img d-block mx-auto" :src="ryhmakuva01Image">
             <br/>
             <img class="img-fluid smaller-img d-block mx-auto" :src="huldaPipsaImage">

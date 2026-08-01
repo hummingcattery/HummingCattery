@@ -36,7 +36,7 @@
                     </section>
                 </div>
                 <div>
-                    <p>Päivitetty 31.5.2026</p>
+                    <p>Päivitetty 1.8.2026</p>
                 </div>
             </footer>
         </div>

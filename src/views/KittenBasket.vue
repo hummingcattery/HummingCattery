@@ -10,22 +10,7 @@
     </div>
 
     <div class="content-container">
-        <p>Neljä pentua syntynyt 7.4.2026 yhdistelmästä: CH JCH KCH Unica vom Lilienweg x KCH FI*Njaalan Puolâš.
-            <br/>
-            Pennuista vapaana lilanaamio poika, suklaanaamio tyttö etsii sijoituskotia pk-seudulta.
-        </p>
-
-        <br/>
-        <ul>
-            <li>Lilanaamio (poika) - Vapaa</li>
-            <li>Suklaatabbynaamio (poika) - Varattu</li> 
-            <li>Suklaatabbynaamio (tyttö) - Varattu</li>
-            <li>Suklaanaamio (tyttö) - Etsii sijoituskotia</li>
-        </ul>
-
-        <p>Tytöistä ainakin toinen etsii sijoituskotia. Jos pentueessa on näyttelytasoisia pentuja, etsimme ensisijaisesti näyttelyistä kiinnostuneita koteja.</p>
-        <img class="img-fluid smaller-img d-block mx-auto" :src="parikuvaImage">
-        <br/>
+        <p>Pentukori toistaiseksi tyhjä. Seuraava pentue suunnitteilla (jos kaikki menee odotetusti) loppuvuodesta 2026.</p>
     </div>
 </template>
 
