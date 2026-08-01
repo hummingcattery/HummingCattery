@@ -11,7 +11,7 @@
     </div>
 
     <div class="content-container">
-        <h2>Demi JohnNatarie -E - US*Kyatwo T'Challa's Glory</h2>
+        <h2>Demi JohnNatarie -E x US*Kyatwo T'Challa's Glory</h2>
         <p>Synt. 26.2.2024</p>
     </div>
     
@@ -19,7 +19,7 @@
     <div class="content-container">
         <KittensTable :cats="[
             [`FI*Humming California Dreamin'`, `SBI n`, `naaras`, `Lemmikki`, ``],
-            [`Fi*Humming California Girls`, `SBI n`, `naaras`, `Siitostasoinen`, `8xNOM, 7xBIS, 4xBIV, Junior Winner`]
+            [`Fi*Humming California Girls`, `SBI n`, `naaras`, `Siitostasoinen`, `13xNOM, 10xBIS, 5xBIV, Junior Winner`]
         ]"/>
   
         <img class="img-fluid smaller-img d-block mx-auto" title="6. pentue" :src="pentue6Img" alt="6. pentue">

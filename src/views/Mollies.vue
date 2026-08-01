@@ -71,10 +71,10 @@
 
     <!-- Vilma Section -->
     <CardWithThumbnails 
-        :name='`"Vilma" JCH KCH Fi*Humming California Girls JW`'
+        :name='`"Vilma" IC JCH KCH Fi*Humming California Girls JW`'
         :variety="'SBI n'"
         :lifeDates="'26.2.2024'"
-        :exhibitionSuccessResults="'8xNOM, 7xBIS, 4xBIV, Junior Winner'"
+        :exhibitionSuccessResults="'13xNOM, 10xBIS, 5xBIV, Junior Winner'"
         :pedigreeAddress="'https://kissat.kissaliitto.fi/Pedigree?id=329981'"
         :image="vilmaImg"
         :gallery="vilmaImages"
