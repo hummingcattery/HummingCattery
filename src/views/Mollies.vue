@@ -57,10 +57,10 @@
 <template>
     <!-- Pipsa Section -->
     <CardWithThumbnails 
-        :name='`"Pippa" KCH FI*Humming Cornflake Girl`'
+        :name='`"Pippa" CH KCH FI*Humming Cornflake Girl`'
         :variety="'	SBI h 21'"
         :lifeDates="'9.4.2025'"
-        :exhibitionSuccessResults="'Kitten Champion'"
+        :exhibitionSuccessResults="'1xNOM'"
         :pedigreeAddress="'https://kissat.kissaliitto.fi/perusnaytto_kissa.aspx?id=349832'"
         :image="pipsaImg"
         :gallery="pipsaImages"

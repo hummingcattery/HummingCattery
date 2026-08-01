@@ -18,7 +18,7 @@
     <h3>Pennut</h3>
     <div class="content-container">
         <KittensTable :cats="[
-            ['FI*Humming Cornflake Girl', 'SBI h 21', 'naaras', 'Näyttely/siitos', 'Kitten Champion'],
+            ['FI*Humming Cornflake Girl', 'SBI h 21', 'naaras', 'Näyttely/siitos', 'Kitten Champion, 1xNOM'],
             ['FI*Humming Silent All These Years', 'SBI c', 'uros', 'Näyttely', 'CACC'],
             ['FI*Humming Happy Phantom', 'SBI c 21', 'uros', 'Näyttely/siitos', 'Kitten Champion, 2xNOM'],
         ]"/>
